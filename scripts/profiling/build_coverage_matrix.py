@@ -22,6 +22,7 @@ from __future__ import annotations
 
 import csv
 import json
+import re
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
@@ -50,7 +51,9 @@ def read_csv(path: Path) -> list[dict]:
 
 
 def clean(value: object) -> str:
-    text = str(value or "")
+    # Gia tri 0 (int) la falsy, "value or "" " se bien 0 thanh "" ->
+    # to_int(0) tra None -> coverage hien UNKNOWN sai le ra phai la NO.
+    text = "" if value is None else str(value)
     text = text.replace("|", "/").replace("\r", " ").replace("\n", " ")
     return " ".join(text.split())
 
@@ -368,6 +371,14 @@ def build_rows_from_api_smoke(smoke_rows: list[dict], start_idx: int) -> list[di
                 row_no += 1
                 area = "TRADE_SMOKE"
                 direction = "EXPORT" if "export" in test_name.lower() else "IMPORT" if "import" in test_name.lower() else ""
+                period_val = ""
+                period_match = (
+                    re.search(r"20\d{2}M\d{2}", test_name)
+                    or re.search(r"20\d{4}", test_name)
+                    or re.search(r"20\d{2}", test_name)
+                )
+                if period_match is not None:
+                    period_val = period_match.group(0)
                 row.update(
                     {
                         "row_id": f"SMOKE-{row_no:03d}",
@@ -376,7 +387,7 @@ def build_rows_from_api_smoke(smoke_rows: list[dict], start_idx: int) -> list[di
                         "source_evidence": "UN Comtrade API; from api_smoke_test_results.csv",
                         "direction": direction,
                         "period_grain": "MONTH" if "monthly" in test_name.lower() else "YEAR",
-                        "year_or_month": "2024" if "2024" in test_name else "2023" if "2023" in test_name else "",
+                        "year_or_month": period_val,
                         "comtrade_vn_reported_available": available if "mirror" not in test_name.lower() else "UNKNOWN",
                         "comtrade_vn_reported_count": "" if "mirror" in test_name.lower() or count is None else str(count),
                         "comtrade_mirror_available": available if "mirror" in test_name.lower() else "UNKNOWN",
