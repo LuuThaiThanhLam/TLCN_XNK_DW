@@ -27,7 +27,7 @@
     "scope_recommendation": "RECONCILIATION_DEMO",
     "note": "Mirror cao hơn VN-reported. EXPORT: VN thường ghi FOB, đối tác nhập khẩu thường ghi CIF; mirror cao hơn có thể là bình thường. Mức chênh lệch: HIGH.",
     "evidence_file": "results/week1/mirror_check_results.csv",
-    "built_at": "2026-09-18T13:26:19+00:00"
+    "built_at": "2026-09-18T13:52:29+00:00"
   },
   {
     "row_id": "TRADE-002",
@@ -57,7 +57,7 @@
     "scope_recommendation": "MIRROR_FALLBACK_DEMO",
     "note": "Việt Nam báo cáo thiếu dữ liệu, nhưng partner mirror có dữ liệu; đây là case quan trọng cho cơ chế mirror.",
     "evidence_file": "results/week1/mirror_check_results.csv",
-    "built_at": "2026-09-18T13:26:19+00:00"
+    "built_at": "2026-09-18T13:52:29+00:00"
   },
   {
     "row_id": "TRADE-003",
@@ -87,7 +87,7 @@
     "scope_recommendation": "RECONCILIATION_DEMO",
     "note": "Mirror cao hơn VN-reported. EXPORT: VN thường ghi FOB, đối tác nhập khẩu thường ghi CIF; mirror cao hơn có thể là bình thường. Mức chênh lệch: HIGH.",
     "evidence_file": "results/week1/mirror_check_results.csv",
-    "built_at": "2026-09-18T13:26:19+00:00"
+    "built_at": "2026-09-18T13:52:29+00:00"
   },
   {
     "row_id": "TRADE-004",
@@ -117,7 +117,7 @@
     "scope_recommendation": "CORE_CANDIDATE",
     "note": "Mirror thấp hơn VN-reported. EXPORT: VN thường ghi FOB, đối tác nhập khẩu thường ghi CIF; mirror cao hơn có thể là bình thường. Mức chênh lệch: LOW.",
     "evidence_file": "results/week1/mirror_check_results.csv",
-    "built_at": "2026-09-18T13:26:19+00:00"
+    "built_at": "2026-09-18T13:52:29+00:00"
   },
   {
     "row_id": "TRADE-005",
@@ -147,7 +147,7 @@
     "scope_recommendation": "CORE_CANDIDATE",
     "note": "Mirror cao hơn VN-reported. IMPORT: VN nhập khẩu thường ghi CIF, đối tác xuất khẩu thường ghi FOB; mirror thấp hơn có thể là bình thường. Mức chênh lệch: LOW.",
     "evidence_file": "results/week1/mirror_check_results.csv",
-    "built_at": "2026-09-18T13:26:19+00:00"
+    "built_at": "2026-09-18T13:52:29+00:00"
   },
   {
     "row_id": "TRADE-006",
@@ -177,7 +177,7 @@
     "scope_recommendation": "CORE_CANDIDATE_WITH_FLAG",
     "note": "Mirror thấp hơn VN-reported. IMPORT: VN nhập khẩu thường ghi CIF, đối tác xuất khẩu thường ghi FOB; mirror thấp hơn có thể là bình thường. Mức chênh lệch: MODERATE.",
     "evidence_file": "results/week1/mirror_check_results.csv",
-    "built_at": "2026-09-18T13:26:19+00:00"
+    "built_at": "2026-09-18T13:52:29+00:00"
   },
   {
     "row_id": "TRADE-007",
@@ -207,7 +207,7 @@
     "scope_recommendation": "MIRROR_FALLBACK_DEMO",
     "note": "Việt Nam báo cáo thiếu dữ liệu, nhưng partner mirror có dữ liệu; đây là case quan trọng cho cơ chế mirror.",
     "evidence_file": "results/week1/mirror_check_results.csv",
-    "built_at": "2026-09-18T13:26:19+00:00"
+    "built_at": "2026-09-18T13:52:29+00:00"
   },
   {
     "row_id": "TRADE-008",
@@ -237,7 +237,7 @@
     "scope_recommendation": "MIRROR_FALLBACK_DEMO",
     "note": "Việt Nam báo cáo thiếu dữ liệu, nhưng partner mirror có dữ liệu; đây là case quan trọng cho cơ chế mirror.",
     "evidence_file": "results/week1/mirror_check_results.csv",
-    "built_at": "2026-09-18T13:26:19+00:00"
+    "built_at": "2026-09-18T13:52:29+00:00"
   },
   {
     "row_id": "SMOKE-009",
@@ -267,7 +267,7 @@
     "scope_recommendation": "TRADE_SOURCE_AVAILABLE",
     "note": "OK",
     "evidence_file": "results/week1/api_smoke_test_results.csv",
-    "built_at": "2026-09-18T13:26:19+00:00"
+    "built_at": "2026-09-18T13:52:29+00:00"
   },
   {
     "row_id": "SMOKE-010",
@@ -297,7 +297,7 @@
     "scope_recommendation": "TRADE_RECENT_YEAR_GAP",
     "note": "OK",
     "evidence_file": "results/week1/api_smoke_test_results.csv",
-    "built_at": "2026-09-18T13:26:19+00:00"
+    "built_at": "2026-09-18T13:52:29+00:00"
   },
   {
     "row_id": "SMOKE-011",
@@ -327,7 +327,7 @@
     "scope_recommendation": "TRADE_SOURCE_AVAILABLE",
     "note": "OK",
     "evidence_file": "results/week1/api_smoke_test_results.csv",
-    "built_at": "2026-09-18T13:26:19+00:00"
+    "built_at": "2026-09-18T13:52:29+00:00"
   },
   {
     "row_id": "SMOKE-012",
@@ -357,7 +357,7 @@
     "scope_recommendation": "TRADE_SOURCE_AVAILABLE",
     "note": "OK",
     "evidence_file": "results/week1/api_smoke_test_results.csv",
-    "built_at": "2026-09-18T13:26:19+00:00"
+    "built_at": "2026-09-18T13:52:29+00:00"
   },
   {
     "row_id": "TARIFF-013",
@@ -387,7 +387,7 @@
     "scope_recommendation": "TARIFF_BASELINE_AVAILABLE",
     "note": "OK",
     "evidence_file": "results/week1/api_smoke_test_results.csv",
-    "built_at": "2026-09-18T13:26:19+00:00"
+    "built_at": "2026-09-18T13:52:29+00:00"
   },
   {
     "row_id": "TARIFF-014",
@@ -417,7 +417,7 @@
     "scope_recommendation": "TARIFF_PREF_AVAILABLE",
     "note": "OK",
     "evidence_file": "results/week1/api_smoke_test_results.csv",
-    "built_at": "2026-09-18T13:26:19+00:00"
+    "built_at": "2026-09-18T13:52:29+00:00"
   },
   {
     "row_id": "TARIFF-015",
@@ -447,7 +447,7 @@
     "scope_recommendation": "TARIFF_PREF_COVERAGE_RISK",
     "note": "Not Found - NoRecordsFound",
     "evidence_file": "results/week1/api_smoke_test_results.csv",
-    "built_at": "2026-09-18T13:26:19+00:00"
+    "built_at": "2026-09-18T13:52:29+00:00"
   },
   {
     "row_id": "MACRO-016",
@@ -477,7 +477,7 @@
     "scope_recommendation": "MACRO_CONTEXT_AVAILABLE",
     "note": "OK",
     "evidence_file": "results/week1/api_smoke_test_results.csv",
-    "built_at": "2026-09-18T13:26:19+00:00"
+    "built_at": "2026-09-18T13:52:29+00:00"
   },
   {
     "row_id": "MACRO-017",
@@ -507,7 +507,7 @@
     "scope_recommendation": "MACRO_CONTEXT_AVAILABLE",
     "note": "OK",
     "evidence_file": "results/week1/api_smoke_test_results.csv",
-    "built_at": "2026-09-18T13:26:19+00:00"
+    "built_at": "2026-09-18T13:52:29+00:00"
   },
   {
     "row_id": "MACRO-018",
@@ -537,6 +537,6 @@
     "scope_recommendation": "MACRO_CONTEXT_AVAILABLE",
     "note": "OK",
     "evidence_file": "results/week1/api_smoke_test_results.csv",
-    "built_at": "2026-09-18T13:26:19+00:00"
+    "built_at": "2026-09-18T13:52:29+00:00"
   }
 ]
