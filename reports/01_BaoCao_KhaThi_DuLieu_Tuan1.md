@@ -133,6 +133,7 @@ Diễn giải: chênh **dương** ở Japan/USA đúng mô hình VN khai FOB –
 - **Nguồn có rủi ro:** WITS/TRAINS — chạy được nhưng coverage thưa theo chiều/năm, chấp nhận ở vai trò phụ có điều kiện.
 - **Phạm vi chốt để trình GVHD:** 2015–2023 (+2024 partial), 5 partner + World, 14 HS6, 2 flow, 2 perspective không trộn, 3 dashboard chính (D3 mirror là điểm mới), tariff/macro phụ. 4 câu hỏi xin xác nhận ghi tại `docs/06_NhiemVu6_ChotPhamViDeTai.md` §10.
 - **Việc tuần 2:** (1) đăng ký Comtrade subscription key → `.env`; (2) extract lõi theo batch (≈12–16 request khi có key), cache raw vào `data/raw/week2_extract/`; (3) dựng DDL staging + star schema đúng §5 docs/06; (4) SSIS package đầu tiên cho FACT_TRADE; (5) nộp biên bản phản hồi GVHD (điền vào docs/06 §11).
+- **Ghi chú điều chỉnh cuối Tuần 2:** mục (3) DDL/star schema và (4) SSIS **dời sang Tuần 3** theo đúng kế hoạch 12 tuần (Tuần 2 ưu tiên hoàn thành toàn bộ extract + QA). Thực tế Tuần 2 đã làm: (1), (2) và mở rộng NV1→NV5 — extract lõi VN_REPORTED 13.725 dòng, bridge HS2017, mirror 5 đối tác 13.252 dòng, WITS tariff 419 dòng, WB macro 300 dòng, QA tổng PASS 7/7. Chi tiết: `reports/tuan2_bao_cao.md` §1 và §7.
 
 ---
 

@@ -31,8 +31,22 @@ Cả hai script đều có resume; bridge dùng manifest riêng `data/raw/week2_
 | NV2 rebuild | `Dong staging: 13725` (y hệt lần trước), validation 5/5 khop; mở `stg_comtrade_vn_reported.csv` lọc `partner_code=0` sẽ thấy các dòng World với `is_aggregate_partner=True` |
 | Bridge batch | 14/14 OK; exit code 0 |
 | Bridge dòng | X dày (thời kỳ Samsung cực đại), M thưa hơn; tổng vài trăm dòng là bình thường |
-| Annual-check §3 | Mục tiêu 14/14 `MATCH`. `WARN_MISMATCH` nhỏ = revision nguồn giữa 2 lần gọi trong cùng run → chỉ ghi chú, không sửa |
+| Annual-check §3 | Mục tiêu 14/14 `MATCH`. **Kết quả thật (đã xác minh cuối Tuần 2): 4/14 MATCH, 10 WARN** — điều tra tới tận nguồn cho thấy WARN là ĐẶC TÍNH NGUỒN (số World ≠ Σ partner trên cùng năm, do cơ chế khai báo khác nhau), KHÔNG phải revision giữa 2 lần gọi như ghi chú ban đầu; pipeline đúng, không sửa gì. Diễn giải đầy đủ: `reports/tuan2_bao_cao.md` §5 case 4 |
 | Output | `data/staging/stg_comtrade_vn_reported_bridge.csv` (không commit) + `results/week2/extract_bridge_hs2017.{md,json}` (commit) |
+
+### 2b. KẾT LUẬN CHÍNH THỨC về các WARN của annual-check (run 2026-09-19: 4/14 MATCH, 10 WARN)
+
+Điều tra độc lập bằng preview API công khai (không key) trên 2 ô lệch lớn nhất (M/2017 lệch 20,6%; X/2015 lệch 1,2%):
+
+| Bằng chứng | Giá trị | Ý nghĩa |
+|---|---:|---|
+| Preview annual M/2017 | 1.850.351.130,800 | khớp annual của `data/v1/get` **từng chữ số** |
+| Preview Σ 12 tháng M/2017 | 1.468.976.306,027 | khớp tổng World trong staging của **chính pipeline bạn** tới 3 số thập phân |
+| 12/12 tháng của chuỗi monthly M/2017 | đều có dòng, mang `isReported=false` | phần lệch A − ΣM **không** đến từ tháng thiếu |
+
+**Kết luận:** extract trung thực 100% với nguồn; A − ΣM là **đặc tính của lưu trữ UN Comtrade** (mode năm cho năm cũ gộp thêm phần ước tính chưa từng xuất hiện ở mode tháng — năm càng cũ lệch càng lớn; 2020–2021 khớp 0,001, còn 2018–2019 lệch <1 USD thuần làm tròn float). **Không phải bug, không chạy lại gì cả.** Hai luật rút ra:
+1. Trong DW của ta, giá trị năm luôn = Σ tháng (tự nhất quán); số annual A của UN chỉ dùng để cross-check QA với **ngưỡng tương đối** (cờ khi >1%), không bao giờ cộng thẳng vào fact.
+2. Check NV3 viết lại thành 3 lớp: `ROUNDING` (≤1 USD) / `MATCH` / `SOURCE_LEVEL_DIFF` (báo %, không tính là fail).
 
 ## 3. Hợp nhất ở tầng transform (tuần 3 — ghi vào backlog transform)
 

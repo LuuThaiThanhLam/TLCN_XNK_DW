@@ -8,7 +8,7 @@
 | Script | Nguồn | Calls | Output |
 |---|---|---:|---|
 | `scripts/extract/extract_wb_macro.py` | WB WDI API v2, 5 chỉ số × 6 nước × 2015–2024 | **5** | `stg_wb_macro.csv` (~300 dòng) + `results/week2/wb_macro.{md,json}` |
-| `scripts/extract/extract_wits_tariff.py` | WITS TRAINS SDMX, 83 combo `year/all`, lọc năm ≥2015 | **83** | `stg_wits_tariff.csv` (~1,5–2k dòng) + `results/week2/wits_tariff_extract.{md,json}` |
+| `scripts/extract/extract_wits_tariff.py` | WITS TRAINS SDMX, 83 combo `year/all`, lọc năm ≥2015 | **83** | `stg_wits_tariff.csv` (kết quả thật: **419 dòng**; ước lượng 1,5–2k ban đầu dôi vì 28/83 combo không có chuỗi trên WITS public — `OK, 0 dòng` ≡ no-data hợp lệ) + `results/week2/wits_tariff_extract.{md,json}` |
 
 Hai bài học nguồn đã được kiểm bằng probe trước khi viết (không đoán):
 1. WB phân tách nhiều nước bằng **dấu chấm phẩy** (`country/VNM;CHN;...`) — dấu phẩy trả error 120; và `BN.TOTL.GD.ZS` là mã chết → đã đổi `NE.TRD.GNFS.ZS` (Trade % of GDP), có test bắt lỗi im lặng (API msg → FAIL, không 0-dòng-không-giải-thích).

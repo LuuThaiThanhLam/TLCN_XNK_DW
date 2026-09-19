@@ -8,7 +8,7 @@
 - **Tuần 2** — NV1 (kiểm API key, gate batch multi-period — PASS 6/6, `docs/07`) và NV2 (extract lõi VN_REPORTED 2015–2024, 13.725 dòng staging, validation 5/5 khớp từng cent với bằng chứng tuần 1 — `docs/08`) — **đã hoàn thành**; bằng chứng tại `results/week2/`.
 - NV2b (bridge mã HS2017 `851712` cho 2015–2021, 958 dòng, annual-check đã điều tra tới tận nguồn — `docs/09`) và audit coverage toàn phạm vi (`scripts/profiling/audit_week2_coverage.py`: 249/252 ô 12/12 tháng, 14/14 neo docs/06 MATCH, 3 ô partial minh oan trùng khớp preview API tới từng tháng thiếu).
 - NV3 mirror 5 đối tác (13.252 dòng, validation 8/8 khớp từng cent với bằng chứng tuần 1 — `docs/10`) — **đã hoàn thành**.
-- NV4 (WITS biểu thuế + WB macro — `docs/11`) và NV5 (QA tuần + coverage + báo cáo) — đang thực hiện.
+- **NV4** (WITS biểu thuế 419 dòng + WB macro 300 dòng — `docs/11`) và **NV5** (QA tổng tuần, PASS 7/7 — `reports/tuan2_bao_cao.md`) — **đã hoàn thành**. Tuần 2 đóng đủ NV1→NV5; Tuần 3: ma trận Bus + grain + Star Schema + DDL + SSIS đầu tiên.
 
 
 ## Cấu trúc thư mục

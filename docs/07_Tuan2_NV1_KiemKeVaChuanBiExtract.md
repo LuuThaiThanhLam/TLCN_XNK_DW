@@ -69,7 +69,7 @@ Bảng xử lý khi FAIL:
 | Check 1 FAIL: `KHONG THAY KEY` | `.env` sai chỗ/sai tên biến/có nháy kép | `.env` phải ở **root project**, `COMTRADE_SUBSCRIPTION_KEY=<key>` không nháy, không space |
 | Check 2: HTTP 401/403 | Key copy thiếu, chưa Active, bị regenerate | Mở profile Developer Portal kiểm tra trạng thái, copy lại Primary Key |
 | Check 3a FAIL nhưng 2 PASS | Hy hữu: monthly bị khóa theo tier | Báo mình kèm note lỗi; kiểm tra lại quyền của sản phẩm Free APIs |
-| Check 3b: 200 nhưng `so ky=1` | Range comma không được tier free cho phép đầy đủ | NV2 chuyển thiết kế sang **gọi từng kỳ** (~168–180 calls/chu kỳ extract, vẫn < 500 calls/ngày); script NV2 có sẵn chế độ `--single-period` |
+| Check 3b: 200 nhưng `so ky=1` | Range comma không được tier free cho phép đầy đủ | NV2 sẽ chuyển thiết kế sang **gọi từng kỳ** (~168–180 calls/chu kỳ extract, vẫn < 500 calls/ngày). Tình huống này ĐÃ KHÔNG xảy ra — Check 3b PASS ngày 2026-09-19, nên NV2 giữ thiết kế multi-period và không có cờ `--single-period` |
 | Check 3b: HTTP 400 "too many values" | Giới hạn số kỳ/call | Giảm danh sách period xuống 6 hoặc 3 kỳ/call, ghi lại số học được vào docs này |
 | Check 4: diff > 0.01 | Comtrade revision dữ liệu giữa 2 lần gọi | Ghi chú snapshot vào báo cáo tuần 2; không cần sửa gì |
 | HTTP 429 các check | Gọi dày | Script tự chờ theo `Try again in N`; chạy lại lần nữa |
