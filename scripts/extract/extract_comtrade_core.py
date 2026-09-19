@@ -272,7 +272,9 @@ def normalize_rows(batch_rows: list[dict], flow: str, year: int, batch_id: str) 
     out = []
     for d in batch_rows:
         period = str(d.get("period") or "")
-        partner_code = str(d.get("partnerCode") or "")
+        # Partner Code 0 (World) la SO NGUYEN 0 → moi dung `or ""` (kich che falsy)
+        raw_partner = d.get("partnerCode")
+        partner_code = "" if raw_partner is None else str(raw_partner).strip()
         hs6 = str(d.get("cmdCode") or "")
         if not re.fullmatch(r"\d{6}", period) or not re.fullmatch(r"\d{6}", hs6):
             continue
@@ -563,6 +565,15 @@ def selftest() -> int:
     if index.get(("X", "392", "090111", "202301")) != 10.5:
         failures.append("cell index khong tim thay (X,392,090111,202301)=10.5")
 
+    # Regression test: World co partnerCode = 0 (int, falsy) — bug tung gay
+    fake_world = [{
+        "period": "202301", "partnerCode": 0, "partnerDesc": "World",
+        "cmdCode": "090111", "cmdDesc": "Coffee", "primaryValue": 5.0,
+    }]
+    wrows = normalize_rows(fake_world, "X", 2023, "vn_X_2023")
+    if len(wrows) != 1 or wrows[0]["partner_code"] != "0" or wrows[0]["is_aggregate_partner"] is not True:
+        failures.append(f"World partnerCode=0 bi normalize sai: {wrows}")
+
     wanted = [
         {"case_id": "FAKE_OK", "cell": ("X", "392", "090111", "202301"), "week1_value": 10.5},
         {"case_id": "FAKE_BAD", "cell": ("X", "392", "090111", "202301"), "week1_value": 999.0},
@@ -587,7 +598,7 @@ def selftest() -> int:
             print(f"[FAIL] {f}")
         print("SELFTEST: FAIL")
         return 1
-    print("Tat ca 5 nhom kiem tra offline deu dat.")
+    print("Tat ca 6 nhom kiem tra offline deu dat.")
     print("SELFTEST: PASS")
     return 0
 

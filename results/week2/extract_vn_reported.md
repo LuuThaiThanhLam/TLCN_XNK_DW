@@ -1,6 +1,6 @@
 # EXTRACT VN_REPORTED — TUAN 2 NV2
 
-- Chat luc: 2026-09-19T03:54:10+00:00
+- Chat luc: 2026-09-19T04:10:18+00:00
 - Nam: 2015–2024 (2015–2023 = loi theo docs/06; 2024 = partial)
 - Pham vi: 14 HS6 x 6 partner x 2 flow, grain thang, mode key `data/v1/get`
 - Tong so dong staging: **13725**
@@ -65,26 +65,26 @@ Cung query (bao gom luat khong motCode/customs/partner2), 2 thoi diem khac nhau 
 
 | Batch | Trang thai | So dong | Mode | Ghi chu |
 |---|---|---:|---|---|
-| vn_X_2015 | SKIP (cache) | 798 | cache | OK |
-| vn_X_2016 | OK | 812 | single | OK |
-| vn_X_2017 | OK | 816 | single | OK |
-| vn_X_2018 | OK | 824 | single | OK |
-| vn_X_2019 | OK | 840 | single | OK |
-| vn_X_2020 | OK | 814 | single | OK |
-| vn_X_2021 | OK | 841 | single | OK |
-| vn_X_2022 | OK | 913 | single | OK |
-| vn_X_2023 | OK | 906 | single | OK |
-| vn_X_2024 | OK | 0 | single | OK |
-| vn_M_2015 | SKIP (cache) | 638 | cache | OK |
-| vn_M_2016 | OK | 662 | single | OK |
-| vn_M_2017 | OK | 668 | single | OK |
-| vn_M_2018 | OK | 669 | single | OK |
-| vn_M_2019 | OK | 678 | single | OK |
-| vn_M_2020 | OK | 683 | single | OK |
-| vn_M_2021 | OK | 670 | single | OK |
-| vn_M_2022 | OK | 753 | single | OK |
-| vn_M_2023 | OK | 740 | single | OK |
-| vn_M_2024 | OK | 0 | single | OK |
+| vn_M_2015 | REBUILT | 638 | cache |  |
+| vn_M_2016 | REBUILT | 662 | cache |  |
+| vn_M_2017 | REBUILT | 668 | cache |  |
+| vn_M_2018 | REBUILT | 669 | cache |  |
+| vn_M_2019 | REBUILT | 678 | cache |  |
+| vn_M_2020 | REBUILT | 683 | cache |  |
+| vn_M_2021 | REBUILT | 670 | cache |  |
+| vn_M_2022 | REBUILT | 753 | cache |  |
+| vn_M_2023 | REBUILT | 740 | cache |  |
+| vn_M_2024 | REBUILT | 0 | cache |  |
+| vn_X_2015 | REBUILT | 798 | cache |  |
+| vn_X_2016 | REBUILT | 812 | cache |  |
+| vn_X_2017 | REBUILT | 816 | cache |  |
+| vn_X_2018 | REBUILT | 824 | cache |  |
+| vn_X_2019 | REBUILT | 840 | cache |  |
+| vn_X_2020 | REBUILT | 814 | cache |  |
+| vn_X_2021 | REBUILT | 841 | cache |  |
+| vn_X_2022 | REBUILT | 913 | cache |  |
+| vn_X_2023 | REBUILT | 906 | cache |  |
+| vn_X_2024 | REBUILT | 0 | cache |  |
 
 ## 5. Ghi chu
 

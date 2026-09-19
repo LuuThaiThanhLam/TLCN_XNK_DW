@@ -1,5 +1,5 @@
 {
-  "ran_at": "2026-09-19T03:54:10+00:00",
+  "ran_at": "2026-09-19T04:10:18+00:00",
   "years": [
     2015,
     2016,
@@ -113,144 +113,144 @@
   ],
   "fetch_log": [
     {
-      "batch_id": "vn_X_2015",
-      "status": "SKIP (cache)",
-      "rows": 798,
-      "mode": "cache",
-      "note": "OK"
-    },
-    {
-      "batch_id": "vn_X_2016",
-      "status": "OK",
-      "rows": 812,
-      "mode": "single",
-      "note": "OK"
-    },
-    {
-      "batch_id": "vn_X_2017",
-      "status": "OK",
-      "rows": 816,
-      "mode": "single",
-      "note": "OK"
-    },
-    {
-      "batch_id": "vn_X_2018",
-      "status": "OK",
-      "rows": 824,
-      "mode": "single",
-      "note": "OK"
-    },
-    {
-      "batch_id": "vn_X_2019",
-      "status": "OK",
-      "rows": 840,
-      "mode": "single",
-      "note": "OK"
-    },
-    {
-      "batch_id": "vn_X_2020",
-      "status": "OK",
-      "rows": 814,
-      "mode": "single",
-      "note": "OK"
-    },
-    {
-      "batch_id": "vn_X_2021",
-      "status": "OK",
-      "rows": 841,
-      "mode": "single",
-      "note": "OK"
-    },
-    {
-      "batch_id": "vn_X_2022",
-      "status": "OK",
-      "rows": 913,
-      "mode": "single",
-      "note": "OK"
-    },
-    {
-      "batch_id": "vn_X_2023",
-      "status": "OK",
-      "rows": 906,
-      "mode": "single",
-      "note": "OK"
-    },
-    {
-      "batch_id": "vn_X_2024",
-      "status": "OK",
-      "rows": 0,
-      "mode": "single",
-      "note": "OK"
-    },
-    {
       "batch_id": "vn_M_2015",
-      "status": "SKIP (cache)",
+      "status": "REBUILT",
       "rows": 638,
       "mode": "cache",
-      "note": "OK"
+      "note": ""
     },
     {
       "batch_id": "vn_M_2016",
-      "status": "OK",
+      "status": "REBUILT",
       "rows": 662,
-      "mode": "single",
-      "note": "OK"
+      "mode": "cache",
+      "note": ""
     },
     {
       "batch_id": "vn_M_2017",
-      "status": "OK",
+      "status": "REBUILT",
       "rows": 668,
-      "mode": "single",
-      "note": "OK"
+      "mode": "cache",
+      "note": ""
     },
     {
       "batch_id": "vn_M_2018",
-      "status": "OK",
+      "status": "REBUILT",
       "rows": 669,
-      "mode": "single",
-      "note": "OK"
+      "mode": "cache",
+      "note": ""
     },
     {
       "batch_id": "vn_M_2019",
-      "status": "OK",
+      "status": "REBUILT",
       "rows": 678,
-      "mode": "single",
-      "note": "OK"
+      "mode": "cache",
+      "note": ""
     },
     {
       "batch_id": "vn_M_2020",
-      "status": "OK",
+      "status": "REBUILT",
       "rows": 683,
-      "mode": "single",
-      "note": "OK"
+      "mode": "cache",
+      "note": ""
     },
     {
       "batch_id": "vn_M_2021",
-      "status": "OK",
+      "status": "REBUILT",
       "rows": 670,
-      "mode": "single",
-      "note": "OK"
+      "mode": "cache",
+      "note": ""
     },
     {
       "batch_id": "vn_M_2022",
-      "status": "OK",
+      "status": "REBUILT",
       "rows": 753,
-      "mode": "single",
-      "note": "OK"
+      "mode": "cache",
+      "note": ""
     },
     {
       "batch_id": "vn_M_2023",
-      "status": "OK",
+      "status": "REBUILT",
       "rows": 740,
-      "mode": "single",
-      "note": "OK"
+      "mode": "cache",
+      "note": ""
     },
     {
       "batch_id": "vn_M_2024",
-      "status": "OK",
+      "status": "REBUILT",
       "rows": 0,
-      "mode": "single",
-      "note": "OK"
+      "mode": "cache",
+      "note": ""
+    },
+    {
+      "batch_id": "vn_X_2015",
+      "status": "REBUILT",
+      "rows": 798,
+      "mode": "cache",
+      "note": ""
+    },
+    {
+      "batch_id": "vn_X_2016",
+      "status": "REBUILT",
+      "rows": 812,
+      "mode": "cache",
+      "note": ""
+    },
+    {
+      "batch_id": "vn_X_2017",
+      "status": "REBUILT",
+      "rows": 816,
+      "mode": "cache",
+      "note": ""
+    },
+    {
+      "batch_id": "vn_X_2018",
+      "status": "REBUILT",
+      "rows": 824,
+      "mode": "cache",
+      "note": ""
+    },
+    {
+      "batch_id": "vn_X_2019",
+      "status": "REBUILT",
+      "rows": 840,
+      "mode": "cache",
+      "note": ""
+    },
+    {
+      "batch_id": "vn_X_2020",
+      "status": "REBUILT",
+      "rows": 814,
+      "mode": "cache",
+      "note": ""
+    },
+    {
+      "batch_id": "vn_X_2021",
+      "status": "REBUILT",
+      "rows": 841,
+      "mode": "cache",
+      "note": ""
+    },
+    {
+      "batch_id": "vn_X_2022",
+      "status": "REBUILT",
+      "rows": 913,
+      "mode": "cache",
+      "note": ""
+    },
+    {
+      "batch_id": "vn_X_2023",
+      "status": "REBUILT",
+      "rows": 906,
+      "mode": "cache",
+      "note": ""
+    },
+    {
+      "batch_id": "vn_X_2024",
+      "status": "REBUILT",
+      "rows": 0,
+      "mode": "cache",
+      "note": ""
     }
   ]
 }

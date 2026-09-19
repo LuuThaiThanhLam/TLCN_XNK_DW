@@ -4,9 +4,10 @@
 
 ## Mục tiêu hiện tại
 
-Dự án đang ở **Tuần 1 — Phần 1: Khảo sát dữ liệu và chốt phạm vi**.
+- **Tuần 1** — khảo sát dữ liệu, chốt phạm vi, báo cáo khả thi — **đã hoàn thành**; bằng chứng tại `results/week1/`, `reports/`, `docs/00`→`docs/06`.
+- **Tuần 2** — NV1 (kiểm API key, gate batch multi-period — PASS 6/6, `docs/07`) và NV2 (extract lõi VN_REPORTED 2015–2024, 13.725 dòng staging, validation 5/5 khớp từng cent với bằng chứng tuần 1 — `docs/08`) — **đã hoàn thành**; bằng chứng tại `results/week2/`.
+- Đang tiếp tục: **NV3** mirror 5 đối tác (PARTNER_MIRROR), **NV4** WITS biểu thuế + World Bank macro, **NV5** QA tuần + báo cáo.
 
-Tuần 1 tập trung kiểm chứng dữ liệu từ API, chưa xây Data Warehouse đầy đủ.
 
 ## Cấu trúc thư mục
 

@@ -1,0 +1,186 @@
+{
+  "ran_at": "2026-09-19T04:11:59+00:00",
+  "total_rows": 958,
+  "log": [
+    {
+      "batch_id": "vnbr_X_2015",
+      "status": "OK",
+      "rows": 65
+    },
+    {
+      "batch_id": "vnbr_X_2016",
+      "status": "OK",
+      "rows": 72
+    },
+    {
+      "batch_id": "vnbr_X_2017",
+      "status": "OK",
+      "rows": 72
+    },
+    {
+      "batch_id": "vnbr_X_2018",
+      "status": "OK",
+      "rows": 72
+    },
+    {
+      "batch_id": "vnbr_X_2019",
+      "status": "OK",
+      "rows": 72
+    },
+    {
+      "batch_id": "vnbr_X_2020",
+      "status": "OK",
+      "rows": 72
+    },
+    {
+      "batch_id": "vnbr_X_2021",
+      "status": "OK",
+      "rows": 72
+    },
+    {
+      "batch_id": "vnbr_M_2015",
+      "status": "OK",
+      "rows": 56
+    },
+    {
+      "batch_id": "vnbr_M_2016",
+      "status": "OK",
+      "rows": 64
+    },
+    {
+      "batch_id": "vnbr_M_2017",
+      "status": "OK",
+      "rows": 69
+    },
+    {
+      "batch_id": "vnbr_M_2018",
+      "status": "OK",
+      "rows": 66
+    },
+    {
+      "batch_id": "vnbr_M_2019",
+      "status": "OK",
+      "rows": 63
+    },
+    {
+      "batch_id": "vnbr_M_2020",
+      "status": "OK",
+      "rows": 72
+    },
+    {
+      "batch_id": "vnbr_M_2021",
+      "status": "OK",
+      "rows": 71
+    }
+  ],
+  "annual_checks": [
+    {
+      "flow": "X",
+      "year": 2015,
+      "annual": 25088231933.0,
+      "monthly_sum": 24784107781.915,
+      "status": "WARN_MISMATCH",
+      "diff": 304124151.0849991
+    },
+    {
+      "flow": "X",
+      "year": 2016,
+      "annual": 27155261576.67,
+      "monthly_sum": 26907158032.209995,
+      "status": "WARN_MISMATCH",
+      "diff": 248103544.4600029
+    },
+    {
+      "flow": "X",
+      "year": 2017,
+      "annual": 29646866365.4,
+      "monthly_sum": 29437898035.622,
+      "status": "WARN_MISMATCH",
+      "diff": 208968329.77799988
+    },
+    {
+      "flow": "X",
+      "year": 2018,
+      "annual": 31125419011.92,
+      "monthly_sum": 31125419012.058002,
+      "status": "WARN_MISMATCH",
+      "diff": -0.13800430297851562
+    },
+    {
+      "flow": "X",
+      "year": 2019,
+      "annual": 34151089860.53,
+      "monthly_sum": 34151089861.473003,
+      "status": "WARN_MISMATCH",
+      "diff": -0.9430046081542969
+    },
+    {
+      "flow": "X",
+      "year": 2020,
+      "annual": 31090301706.337,
+      "monthly_sum": 31090301706.336002,
+      "status": "MATCH"
+    },
+    {
+      "flow": "X",
+      "year": 2021,
+      "annual": 33620820860.368,
+      "monthly_sum": 33620820860.367,
+      "status": "MATCH"
+    },
+    {
+      "flow": "M",
+      "year": 2015,
+      "annual": 1397672650.0,
+      "monthly_sum": 1316780831.891,
+      "status": "WARN_MISMATCH",
+      "diff": 80891818.10899997
+    },
+    {
+      "flow": "M",
+      "year": 2016,
+      "annual": 1587314859.93,
+      "monthly_sum": 1381740287.24,
+      "status": "WARN_MISMATCH",
+      "diff": 205574572.69000006
+    },
+    {
+      "flow": "M",
+      "year": 2017,
+      "annual": 1850351130.8,
+      "monthly_sum": 1468976306.027,
+      "status": "WARN_MISMATCH",
+      "diff": 381374824.773
+    },
+    {
+      "flow": "M",
+      "year": 2018,
+      "annual": 1671646315.42,
+      "monthly_sum": 1671646315.5839999,
+      "status": "WARN_MISMATCH",
+      "diff": -0.1639997959136963
+    },
+    {
+      "flow": "M",
+      "year": 2019,
+      "annual": 1760806612.43,
+      "monthly_sum": 1760806612.9710002,
+      "status": "WARN_MISMATCH",
+      "diff": -0.5410001277923584
+    },
+    {
+      "flow": "M",
+      "year": 2020,
+      "annual": 1498777488.076,
+      "monthly_sum": 1498777488.0749998,
+      "status": "MATCH"
+    },
+    {
+      "flow": "M",
+      "year": 2021,
+      "annual": 2590326874.283,
+      "monthly_sum": 2590326874.2840004,
+      "status": "MATCH"
+    }
+  ]
+}
