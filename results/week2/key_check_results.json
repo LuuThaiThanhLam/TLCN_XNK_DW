@@ -1,9 +1,10 @@
 {
-  "ran_at": "2026-09-19T03:39:02+00:00",
+  "ran_at": "2026-09-19T03:43:35+00:00",
+  "script_version": 2,
   "mode": "verify_comtrade_key",
   "key_present": true,
   "key_masked": "4cf9****(dai 32)",
-  "all_passed": false,
+  "all_passed": true,
   "checks": [
     {
       "name": "1. Key duoc doc tu moi truong/.env",
@@ -11,17 +12,28 @@
       "detail": "4cf9****(dai 32)"
     },
     {
-      "name": "2. Goi data/v1/get (annual 2023 TOTAL)",
+      "name": "2. data/v1/get annual 2023 TOTAL",
       "passed": true,
       "detail": "HTTP 200, count=1, value=353077513296.001, note=OK"
     },
     {
-      "name": "3. Goi monthly voi RANGE period 201501:201512",
-      "passed": false,
-      "detail": "HTTP 400, count=None, so ky tra ve=0 ([]...), note={\"error\":\"Invalid parameter value\",\"details\":[{\"memberNames\":[\"period\"],\"errorMessage\":\"The field period is invalid\"}]}"
+      "name": "3a. monthly mot ky don (201501)",
+      "passed": true,
+      "detail": "HTTP 200, count=1, note=OK"
     },
     {
-      "name": "4. Cross-check gia tri voi preview tuan 1",
+      "name": "3b. monthly 12 ky cach bang DAU PHAY (dinh dang API moi)",
+      "passed": true,
+      "detail": "HTTP 200, count=12, so ky=12 ['201501', '201502', '201503']...['201511', '201512'], note=OK"
+    },
+    {
+      "name": "3c. (tham khao) range dau hai cham 201501:201512",
+      "passed": true,
+      "informational": true,
+      "detail": "HTTP 400, count=None, note={\"error\":\"Invalid parameter value\",\"details\":[{\"memberNames\":[\"period\"],\"errorMessage\":\"The field period is invalid\"}]} → API MOI dung dau phay, khong dung dau hai cham"
+    },
+    {
+      "name": "4. Cross-check gia tri annual 2023 voi preview tuan 1",
       "passed": true,
       "detail": "preview=353077513296.001, key=353077513296.001, diff=0.000 USD"
     }

@@ -1,22 +1,30 @@
 """
-TUAN 2 — NHIEM VU 1: KIEM TRA COMTRADE API KEY (KEY CHECK)
+TUAN 2 — NHIEM VU 1: KIEM TRA COMTRADE API KEY (KEY CHECK, BAN 2)
 Đề tài: Xây dựng Kho dữ liệu hỗ trợ phân tích và ra quyết định xuất nhập khẩu hàng hóa Việt Nam
 
 Mục đích:
-- Chính thức hóa việc kiểm tra Comtrade subscription key (Free APIs) trước khi extract hàng loạt.
-- 3 kiểm tra: (1) key đọc được từ .env; (2) goi data/v1/get nam 2023 TOTAL; (3) goi monthly
-  voi RANGE ky (period=201501:201512) de chung minh batch multi-period hoat dong.
-- Cross-check: so giá trị annual 2023 cua mode-key voi bang chung preview đã commit
-  ở results/week1/api_smoke_test_results.json.
-- Ket qua luu vao results/week2/key_check_results.{json,md}. KHÔNG ghi đè bat ky file nao
-  trong results/week1.
+- Kiểm key Free APIs trước khi extract hàng loạt. Ban 2 phat hien tu lan chay dau tien:
+  API MOI (comtradeapi.un.org) KHONG nhan range dau hai cham `period=201501:201512`
+  (400 "The field period is invalid"); cu phap dung là DANH SÁCH CÁCH NHAU BANG DAU PHAY
+  `period=201501,201502,...` (theo docs chính thức). Script nay kiem dung dieu do.
+- 6 kiem tra:
+  1) Key doc duoc tu .env / bien moi truong (in mask, khong in key du).
+  2) data/v1/get annual 2023 TOTAL → 200 + co duong dan.
+  3a) data/v1/get monthly 1 ky don (201501) → 200.
+  3b) data/v1/get monthly 12 ky cach bang dau phay → 200 + nhieu hon 1 ky → PASSED thi
+      NV2 duoc phep batch ca nam trong 1 call.
+  3c) (tham khao) colon-range 201501:201512 → ky vong bi tu choi; chi ghi lai hanh vi.
+  4) Cross-check gia tri annual 2023 cua mode-key voi bang chung preview tuan 1.
+- Ket qua luu results/week2/key_check_results.{json,md}. KHONG ghi de file nao week1.
+  (Lan chay dau tien — FAIL 3b vi colon-range — van con trong lich su git 041d8ac, giu
+  nhu bang chung phat hien.)
 
 Cách chạy Git Bash trên Windows:
     cd /d/Year26_27_HKI/TLCN/TLCN_XNK_DW
     source .venv/Scripts/activate
     python scripts/utils/verify_comtrade_key.py
 
-Exit code: 0 = PASS, 1 = FAIL (xem bang ket qua in ra de biet nguyên nhân).
+Exit code: 0 = PASS (3b la dieu kien can), 1 = FAIL.
 """
 
 from __future__ import annotations
@@ -45,6 +53,8 @@ SESSION = requests.Session()
 VIETNAM_CODE = "704"
 WORLD_CODE = "0"
 DATA_API_BASE = "https://comtradeapi.un.org/data/v1/get"
+
+MONTHS_2015 = [f"2015{m:02d}" for m in range(1, 13)]
 
 
 # =========================
@@ -224,55 +234,79 @@ def run_checks(key: str | None) -> list[dict]:
     checks.append(check1)
 
     if not key:
-        checks.append({"name": "2. Goi data/v1/get (annual 2023 TOTAL)", "passed": False, "detail": "BO QUA - chua co key"})
-        checks.append({"name": "3. Goi monthly voi RANGE period 201501:201512", "passed": False, "detail": "BO QUA - chua co key"})
-        checks.append({"name": "4. Cross-check gia tri voi preview tuan 1", "passed": False, "detail": "BO QUA - chua co key"})
+        for skipped in ("2.", "3a.", "3b.", "3c.", "4."):
+            checks.append({"name": skipped.strip() + " BO QUA - chua co key", "passed": False, "detail": "—", "skipped": True})
         return checks
 
     annual = call_data_api(
-        "key_check_annual_total_2023",
+        "v2_key_check_annual_total_2023",
         "A",
         {"cmdCode": "TOTAL", "flowCode": "X", "partnerCode": WORLD_CODE, "period": "2023"},
         key,
     )
-    check2 = {
-        "name": "2. Goi data/v1/get (annual 2023 TOTAL)",
+    checks.append({
+        "name": "2. data/v1/get annual 2023 TOTAL",
         "passed": bool(annual["ok"]) and (annual["count"] or 0) >= 1,
         "detail": f"HTTP {annual['status_code']}, count={annual['count']}, value={annual['first_value_usd']}, note={annual['note'] or 'OK'}",
-    }
-    checks.append(check2)
+    })
     time.sleep(2.5)
 
-    monthly = call_data_api(
-        "key_check_monthly_range_201501_201512",
+    single = call_data_api(
+        "v2_key_check_monthly_single_201501",
+        "M",
+        {"cmdCode": "090111", "flowCode": "X", "partnerCode": "392", "period": "201501"},
+        key,
+    )
+    checks.append({
+        "name": "3a. monthly mot ky don (201501)",
+        "passed": bool(single["ok"]),
+        "detail": f"HTTP {single['status_code']}, count={single['count']}, note={single['note'] or 'OK'}",
+    })
+    time.sleep(2.5)
+
+    comma_periods = ",".join(MONTHS_2015)
+    multi = call_data_api(
+        "v2_key_check_monthly_comma_201501_201512",
+        "M",
+        {"cmdCode": "090111", "flowCode": "X", "partnerCode": "392", "period": comma_periods},
+        key,
+    )
+    got_periods = multi["periods"] or []
+    checks.append({
+        "name": "3b. monthly 12 ky cach bang DAU PHAY (dinh dang API moi)",
+        "passed": bool(multi["ok"]) and len(got_periods) >= 2,
+        "detail": f"HTTP {multi['status_code']}, count={multi['count']}, so ky={len(got_periods)} {got_periods[:3]}...{got_periods[-2:] if len(got_periods) > 3 else ''}, note={multi['note'] or 'OK'}",
+    })
+    time.sleep(2.5)
+
+    colon = call_data_api(
+        "v2_key_check_monthly_colon_range",
         "M",
         {"cmdCode": "090111", "flowCode": "X", "partnerCode": "392", "period": "201501:201512"},
         key,
     )
-    periods = monthly["periods"] or []
-    check3 = {
-        "name": "3. Goi monthly voi RANGE period 201501:201512",
-        "passed": bool(monthly["ok"]) and len(periods) >= 2,
-        "detail": f"HTTP {monthly['status_code']}, count={monthly['count']}, so ky tra ve={len(periods)} ({periods[:3]}...{periods[-2:] if len(periods) > 3 else ''}), note={monthly['note'] or 'OK'}",
-    }
-    checks.append(check3)
+    checks.append({
+        "name": "3c. (tham khao) range dau hai cham 201501:201512",
+        "passed": True,
+        "informational": True,
+        "detail": f"HTTP {colon['status_code']}, count={colon['count']}, note={clean_text(colon['note'], 160) or 'OK'} → API MOI dung dau phay, khong dung dau hai cham",
+    })
 
     preview_value = load_week1_preview_value()
     key_value = annual["first_value_usd"]
     if preview_value is None or key_value is None:
-        check4 = {
-            "name": "4. Cross-check gia tri voi preview tuan 1",
-            "passed": preview_value is None and key_value is None,
-            "detail": f"preview={preview_value}, key={key_value} - khong du du lieu de doi chieu (khong chan)",
-        }
+        checks.append({
+            "name": "4. Cross-check gia tri annual 2023 voi preview tuan 1",
+            "passed": False,
+            "detail": f"preview={preview_value}, key={key_value} - khong du du lieu de doi chieu",
+        })
     else:
         diff = abs(float(key_value) - preview_value)
-        check4 = {
-            "name": "4. Cross-check gia tri voi preview tuan 1",
+        checks.append({
+            "name": "4. Cross-check gia tri annual 2023 voi preview tuan 1",
             "passed": diff <= 0.01,
             "detail": f"preview={preview_value}, key={key_value}, diff={diff:.3f} USD",
-        }
-    checks.append(check4)
+        })
 
     return checks
 
@@ -285,6 +319,7 @@ def run_checks(key: str | None) -> list[dict]:
 def write_outputs(key: str | None, checks: list[dict], all_passed: bool) -> None:
     payload = {
         "ran_at": now_iso(),
+        "script_version": 2,
         "mode": "verify_comtrade_key",
         "key_present": key is not None,
         "key_masked": mask_key(key) if key else None,
@@ -296,7 +331,7 @@ def write_outputs(key: str | None, checks: list[dict], all_passed: bool) -> None
     )
 
     lines = [
-        "# KEY CHECK RESULTS — TUAN 2 (NHIEM VU 1)",
+        "# KEY CHECK RESULTS — TUAN 2 (NHIEM VU 1, BAN 2)",
         "",
         f"- Chay luc: {payload['ran_at']}",
         f"- Key tai duoc: {'CO' if key else 'KHONG'} ({mask_key(key) if key else '—'})",
@@ -306,22 +341,23 @@ def write_outputs(key: str | None, checks: list[dict], all_passed: bool) -> None
         "|---:|---|:---:|---|",
     ]
     for idx, c in enumerate(checks, start=1):
-        mark = "✅" if c["passed"] else "❌"
+        mark = "ℹ️" if c.get("informational") else ("✅" if c["passed"] else "❌")
         lines.append(f"| {idx} | {c['name']} | {mark} | {clean_text(c['detail'], 220)} |")
     lines += [
         "",
         "## Y nghia",
         "",
-        "- Kiem tra 2 dat: endpoint day du `data/v1/get` tra duoc du lieu (khong con bi chan preview 500 records).",
-        "- Kiem tra 3 dat: 1 query lay duoc nhieu ky (range period) → nen cho thiet ke extract tuan 2 batch theo nam.",
-        "- Kiem tra 4 dat: mode key va mode preview tra cung mot so lieu → bang chung tuan 1 van con gia tri doi chieu.",
-        "- Raw response cu the nam trong `data/raw/week2_key_check/` (khong commit, .gitignore da chan).",
+        "- Kiem tra 2: endpoint day du `data/v1/get` tra du lieu bang key (khong con chan preview 500 records/1 ky).",
+        "- Kiem tra 3b: MOT call monthly lay duoc nhieu ky khi dung danh sach `period=YYYYMM,YYYYMM,...` (cu ph chinh thuc cua API moi — docs vi du `period=202301,202302,...`). 3b PASS → W2-NV2 batch theo nam (12 ky/call) duoc phep thuc hien.",
+        "- Kiem tra 3c (tham khao): `period=201501:201512` (dau hai cham) la cu phap API cu, bi API moi tu choi 400. Ban 1 cua script dung cu phap nay va FAIL — phat hien da duoc giu trong lich su git (commit 041d8ac).",
+        "- Kiem tra 4: mode key va mode preview cung tra mot so lieu → bang chung tuan 1 con nguyen gia tri doi chieu.",
+        "- Raw response nam trong `data/raw/week2_key_check/` (khong commit, .gitignore da chan).",
     ]
     (RESULT_DIR / "key_check_results.md").write_text("\n".join(lines), encoding="utf-8")
 
 
 def main() -> int:
-    print("=== TUAN 2 - NV1: KIEM TRA COMTRADE API KEY ===")
+    print("=== TUAN 2 - NV1: KIEM TRA COMTRADE API KEY (BAN 2 - DA SUA CU PHAP PERIOD) ===")
     print(f"Project root: {PROJECT_ROOT}")
     print("")
 
@@ -330,7 +366,7 @@ def main() -> int:
     all_passed = all(c["passed"] for c in checks)
 
     for c in checks:
-        mark = "PASS" if c["passed"] else "FAIL"
+        mark = "INFO" if c.get("informational") else ("PASS" if c["passed"] else "FAIL")
         print(f"[{mark}] {c['name']}")
         print(f"       {c['detail']}")
 
@@ -340,9 +376,11 @@ def main() -> int:
     print(f"- {RESULT_DIR.relative_to(PROJECT_ROOT)}/key_check_results.md")
     print(f"- {RESULT_DIR.relative_to(PROJECT_ROOT)}/key_check_results.json")
     print("")
-    verdict = "PASS — san sang cho W2-NV2 (extract loi)" if all_passed else "FAIL — xu ly nguyen nhan o tren roi chay lai"
-    print(f"KET LUAN: {verdict}")
-    return 0 if all_passed else 1
+    if all_passed:
+        print("KET LUAN: PASS — chot thiet ke W2-NV2 batch-theo-nam (comma period).")
+        return 0
+    print("KET LUAN: FAIL — xem bang o tren; neu 3b FAIL thi NV2 phai goi tung ky (thieu may muon van xong, quota 500 calls/ngay du cho ~168-180 calls/lan chay).")
+    return 1
 
 
 if __name__ == "__main__":

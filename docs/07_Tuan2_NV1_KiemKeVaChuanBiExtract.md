@@ -43,27 +43,38 @@ echo $?   # 0 = PASS
 
 ## 5. Kết quả kỳ vọng
 
+> Phiên bản 2 của script — sửa sau phát hiện ở lần chạy đầu (commit `041d8ac`): API mới **không** nhận range dấu hai chấm `period=201501:201512` (HTTP 400 "The field period is invalid" — cú pháp đó của hệ thống cũ). Cú pháp đúng, theo docs chính thức, là **danh sách phân tách dấu phẩy** `period=201501,201502,...`.
+
 ```text
 [PASS] 1. Key duoc doc tu moi truong/.env
-[PASS] 2. Goi data/v1/get (annual 2023 TOTAL)
+       4cf9****(dai 32)
+[PASS] 2. data/v1/get annual 2023 TOTAL
        HTTP 200, count=1, value=353077513296.001, note=OK
-[PASS] 3. Goi monthly voi RANGE period 201501:201512
-       HTTP 200, count=12, so ky tra ve=12 ...
-[PASS] 4. Cross-check gia tri voi preview tuan 1
+[PASS] 3a. monthly mot ky don (201501)
+       HTTP 200, count=1, note=OK
+[PASS] 3b. monthly 12 ky cach bang DAU PHAY (dinh dang API moi)
+       HTTP 200, count=12, so ky=12 ['201501','201502','201503']...
+[INFO] 3c. (tham khao) range dau hai cham 201501:201512
+       HTTP 400 ... → API MOI dung dau phay, khong dung dau hai cham
+[PASS] 4. Cross-check gia tri annual 2023 voi preview tuan 1
        preview=353077513296.001, key=353077513296.001, diff=0.000 USD
-KET LUAN: PASS — san sang cho W2-NV2 (extract loi)
+
+KET LUAN: PASS — chot thiet ke W2-NV2 batch-theo-nam (comma period).
 ```
 
 Bảng xử lý khi FAIL:
 
 | Triệu chứng | Nguyên nhân hay gặp | Cách xử lý |
 |---|---|---|
-| Check 1 FAIL: `KHONG THAY KEY` | `.env` đặt sai chỗ / sai tên biến / có nháy kép | File `.env` phải nằm **root project**, dòng `COMTRADE_SUBSCRIPTION_KEY=<key>` không nháy, không space |
-| Check 2: HTTP 401/403 | Key copy thiếu, chưa Active, hoặc bị regenerate | Mở profile trên Developer Portal xem trạng thái; copy lại Primary Key |
-| Check 3: count=1 dù xin range | Portal free tier không cho range | Ghi nhận, báo lại — W2-NV2 chuyển thiết kế sang gọi theo từng năm (~180 calls, vẫn dưới 500/ngày) |
-| Check 3: count=0 | Kỳ 2015 cà phê sang Nhật không có dữ liệu tháng | Không chặn; đổi range thử `201801:201812` trong script và chạy lại |
-| Check 4: diff > 0.01 | Hy hữu — Comtrade revision dữ liệu | Không panic: ghi chú "preview snapshot 18/09, key snapshot <ngày>" vào báo cáo; không cần sửa gì |
-| HTTP 429 các check | Gọi dày | Script đã tự chờ theo `Try again in N`; chạy lại lần nữa là đủ |
+| Check 1 FAIL: `KHONG THAY KEY` | `.env` sai chỗ/sai tên biến/có nháy kép | `.env` phải ở **root project**, `COMTRADE_SUBSCRIPTION_KEY=<key>` không nháy, không space |
+| Check 2: HTTP 401/403 | Key copy thiếu, chưa Active, bị regenerate | Mở profile Developer Portal kiểm tra trạng thái, copy lại Primary Key |
+| Check 3a FAIL nhưng 2 PASS | Hy hữu: monthly bị khóa theo tier | Báo mình kèm note lỗi; kiểm tra lại quyền của sản phẩm Free APIs |
+| Check 3b: 200 nhưng `so ky=1` | Range comma không được tier free cho phép đầy đủ | NV2 chuyển thiết kế sang **gọi từng kỳ** (~168–180 calls/chu kỳ extract, vẫn < 500 calls/ngày); script NV2 có sẵn chế độ `--single-period` |
+| Check 3b: HTTP 400 "too many values" | Giới hạn số kỳ/call | Giảm danh sách period xuống 6 hoặc 3 kỳ/call, ghi lại số học được vào docs này |
+| Check 4: diff > 0.01 | Comtrade revision dữ liệu giữa 2 lần gọi | Ghi chú snapshot vào báo cáo tuần 2; không cần sửa gì |
+| HTTP 429 các check | Gọi dày | Script tự chờ theo `Try again in N`; chạy lại lần nữa |
+
+Lần chạy **đầu tiên FAIL 3b không phải điều phải giấu** — nó là bằng chứng phương pháp "test trước khi tin cú pháp"; giữ nguyên trong git history (`041d8ac`), lần chạy PASS này sẽ commit đè file kết quả.
 
 ## 6. Cam kết an toàn key (áp dụng cho mọi nhiệm vụ còn lại)
 
