@@ -25,8 +25,7 @@ data/processed/*
 !data/processed/.gitkeep
 results/*
 !results/.gitkeep
-!results/week1/
-!results/week1/.gitkeep
+!results/week*/
 
 # Office temp
 ~$*.docx
