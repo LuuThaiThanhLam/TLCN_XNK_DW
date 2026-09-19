@@ -1,0 +1,29 @@
+{
+  "ran_at": "2026-09-19T03:39:02+00:00",
+  "mode": "verify_comtrade_key",
+  "key_present": true,
+  "key_masked": "4cf9****(dai 32)",
+  "all_passed": false,
+  "checks": [
+    {
+      "name": "1. Key duoc doc tu moi truong/.env",
+      "passed": true,
+      "detail": "4cf9****(dai 32)"
+    },
+    {
+      "name": "2. Goi data/v1/get (annual 2023 TOTAL)",
+      "passed": true,
+      "detail": "HTTP 200, count=1, value=353077513296.001, note=OK"
+    },
+    {
+      "name": "3. Goi monthly voi RANGE period 201501:201512",
+      "passed": false,
+      "detail": "HTTP 400, count=None, so ky tra ve=0 ([]...), note={\"error\":\"Invalid parameter value\",\"details\":[{\"memberNames\":[\"period\"],\"errorMessage\":\"The field period is invalid\"}]}"
+    },
+    {
+      "name": "4. Cross-check gia tri voi preview tuan 1",
+      "passed": true,
+      "detail": "preview=353077513296.001, key=353077513296.001, diff=0.000 USD"
+    }
+  ]
+}
