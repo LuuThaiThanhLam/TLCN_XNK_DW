@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-09-19T05:14:45+00:00",
+  "overall": "PASS",
+  "missing_files": [],
+  "tasks": [
+    {
+      "name": "NV1 — kiểm key + gate batch",
+      "tag": "NV1  kim key + gate batch",
+      "status": "PASS",
+      "metrics": "checks=6, all_passed=True"
+    },
+    {
+      "name": "NV2 — extract lõi VN_REPORTED",
+      "tag": "NV2  extract li VN_REPORTED",
+      "status": "PASS",
+      "metrics": "staging=13725 dong; 13/14 ma du 108/108 thang (2015-2023); validation vs tuần 1: **5/5 MATCH**"
+    },
+    {
+      "name": "NV2b — bridge 851712 (HS2017)",
+      "tag": "NV2b  bridge 851712 (HS2017)",
+      "status": "PASS",
+      "metrics": "staging=958 dong; batch OK=14/14; annual-check MATCH=4/14 (WARN con lại = đặc tính nguồn A-vs-ΣM, xem muc 5)"
+    },
+    {
+      "name": "NV2-audit — coverage toàn phạm vi",
+      "tag": "NV2-audit  coverage ton phm vi",
+      "status": "PASS",
+      "metrics": "249/252 o 12/12 thang; neo 2023: MATCH 14/14; fails=0, warns=3"
+    },
+    {
+      "name": "NV3 — mirror 5 đối tác",
+      "tag": "NV3  mirror 5 i tc",
+      "status": "PASS",
+      "metrics": "staging=13252 dong (RECON=8379, INFO_EXTRA=4873); batch dat=50/50; validation vs mirror tuần 1: **8/8 MATCH**"
+    },
+    {
+      "name": "NV4a — WITS biểu thuế",
+      "tag": "NV4a  WITS biu thu",
+      "status": "PASS",
+      "metrics": "staging=419 dong; combo OK/SKIP/REBUILT=55/83, NO_DATA=28 (my + vai cap song phuong); anchors MFN/PREF 2018: **2/2 MATCH**"
+    },
+    {
+      "name": "NV4b — WB macro 6 nước × 5 chỉ số",
+      "tag": "NV4b  WB macro 6 nc  5 ch s",
+      "status": "PASS",
+      "metrics": "staging=300 dong; anchors WB 2024: **2/2 MATCH**"
+    }
+  ]
+}
