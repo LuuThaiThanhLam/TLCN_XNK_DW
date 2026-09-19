@@ -1,0 +1,52 @@
+{
+  "ran_at": "2026-09-19T05:01:17+00:00",
+  "total_rows": 300,
+  "log": [
+    {
+      "indicator": "NY.GDP.MKTP.CD",
+      "status": "OK",
+      "rows": 60,
+      "note": "API total=60"
+    },
+    {
+      "indicator": "NY.GDP.PCAP.CD",
+      "status": "OK",
+      "rows": 60,
+      "note": "API total=60"
+    },
+    {
+      "indicator": "FP.CPI.TOTL.ZG",
+      "status": "OK",
+      "rows": 60,
+      "note": "API total=60"
+    },
+    {
+      "indicator": "PA.NUS.FCRF",
+      "status": "OK",
+      "rows": 60,
+      "note": "API total=60"
+    },
+    {
+      "indicator": "NE.TRD.GNFS.ZS",
+      "status": "OK",
+      "rows": 60,
+      "note": "API total=60"
+    }
+  ],
+  "validations": [
+    {
+      "case": "VNM NY.GDP.MKTP.CD 2024",
+      "week1": 476324572783.807,
+      "now": 476324572783.807,
+      "rel": 0.0,
+      "status": "MATCH"
+    },
+    {
+      "case": "VNM PA.NUS.FCRF 2024",
+      "week1": 24164.8858333333,
+      "now": 24164.8858333333,
+      "rel": 0.0,
+      "status": "MATCH"
+    }
+  ]
+}

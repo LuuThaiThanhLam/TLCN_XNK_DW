@@ -1,0 +1,623 @@
+{
+  "ran_at": "2026-09-19T05:04:05+00:00",
+  "total_rows": 419,
+  "by_type": {
+    "VN_IMPORT_MFN": {
+      "combos": 6,
+      "ok": 6,
+      "rows": 125
+    },
+    "VN_IMPORT_PREF": {
+      "combos": 30,
+      "ok": 11,
+      "rows": 65
+    },
+    "MKT_EXPORT_MFN": {
+      "combos": 45,
+      "ok": 36,
+      "rows": 288
+    },
+    "ANCHOR": {
+      "combos": 2,
+      "ok": 2,
+      "rows": 16
+    }
+  },
+  "validations": [
+    {
+      "cell": "704|000|090111|2018|MFN",
+      "week1": 15.0,
+      "now": 15.0,
+      "status": "MATCH"
+    },
+    {
+      "cell": "704|392|090111|2018|PREF",
+      "week1": 8.0,
+      "now": 8.0,
+      "status": "MATCH"
+    }
+  ],
+  "log": [
+    {
+      "combo": "704_000_851762",
+      "type": "VN_IMPORT_MFN",
+      "status": "SKIP",
+      "rows": 15,
+      "years": ""
+    },
+    {
+      "combo": "704_000_854231",
+      "type": "VN_IMPORT_MFN",
+      "status": "SKIP",
+      "rows": 15,
+      "years": ""
+    },
+    {
+      "combo": "704_000_847330",
+      "type": "VN_IMPORT_MFN",
+      "status": "SKIP",
+      "rows": 24,
+      "years": ""
+    },
+    {
+      "combo": "704_000_721049",
+      "type": "VN_IMPORT_MFN",
+      "status": "SKIP",
+      "rows": 24,
+      "years": ""
+    },
+    {
+      "combo": "704_000_540761",
+      "type": "VN_IMPORT_MFN",
+      "status": "SKIP",
+      "rows": 23,
+      "years": ""
+    },
+    {
+      "combo": "704_000_390120",
+      "type": "VN_IMPORT_MFN",
+      "status": "SKIP",
+      "rows": 24,
+      "years": ""
+    },
+    {
+      "combo": "704_156_851762",
+      "type": "VN_IMPORT_PREF",
+      "status": "SKIP",
+      "rows": 11,
+      "years": ""
+    },
+    {
+      "combo": "704_156_854231",
+      "type": "VN_IMPORT_PREF",
+      "status": "SKIP",
+      "rows": 0,
+      "years": ""
+    },
+    {
+      "combo": "704_156_847330",
+      "type": "VN_IMPORT_PREF",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "704_156_721049",
+      "type": "VN_IMPORT_PREF",
+      "status": "OK",
+      "rows": 7,
+      "years": "2015-2021"
+    },
+    {
+      "combo": "704_156_540761",
+      "type": "VN_IMPORT_PREF",
+      "status": "OK",
+      "rows": 7,
+      "years": "2015-2021"
+    },
+    {
+      "combo": "704_156_390120",
+      "type": "VN_IMPORT_PREF",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "704_276_851762",
+      "type": "VN_IMPORT_PREF",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "704_276_854231",
+      "type": "VN_IMPORT_PREF",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "704_276_847330",
+      "type": "VN_IMPORT_PREF",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "704_276_721049",
+      "type": "VN_IMPORT_PREF",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "704_276_540761",
+      "type": "VN_IMPORT_PREF",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "704_276_390120",
+      "type": "VN_IMPORT_PREF",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "704_392_851762",
+      "type": "VN_IMPORT_PREF",
+      "status": "OK",
+      "rows": 7,
+      "years": "2015-2021"
+    },
+    {
+      "combo": "704_392_854231",
+      "type": "VN_IMPORT_PREF",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "704_392_847330",
+      "type": "VN_IMPORT_PREF",
+      "status": "OK",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "704_392_721049",
+      "type": "VN_IMPORT_PREF",
+      "status": "OK",
+      "rows": 7,
+      "years": "2015-2021"
+    },
+    {
+      "combo": "704_392_540761",
+      "type": "VN_IMPORT_PREF",
+      "status": "OK",
+      "rows": 7,
+      "years": "2015-2021"
+    },
+    {
+      "combo": "704_392_390120",
+      "type": "VN_IMPORT_PREF",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "704_410_851762",
+      "type": "VN_IMPORT_PREF",
+      "status": "OK",
+      "rows": 6,
+      "years": "2016-2021"
+    },
+    {
+      "combo": "704_410_854231",
+      "type": "VN_IMPORT_PREF",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "704_410_847330",
+      "type": "VN_IMPORT_PREF",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "704_410_721049",
+      "type": "VN_IMPORT_PREF",
+      "status": "OK",
+      "rows": 6,
+      "years": "2016-2021"
+    },
+    {
+      "combo": "704_410_540761",
+      "type": "VN_IMPORT_PREF",
+      "status": "OK",
+      "rows": 7,
+      "years": "2015-2021"
+    },
+    {
+      "combo": "704_410_390120",
+      "type": "VN_IMPORT_PREF",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "704_842_851762",
+      "type": "VN_IMPORT_PREF",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "704_842_854231",
+      "type": "VN_IMPORT_PREF",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "704_842_847330",
+      "type": "VN_IMPORT_PREF",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "704_842_721049",
+      "type": "VN_IMPORT_PREF",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "704_842_540761",
+      "type": "VN_IMPORT_PREF",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "704_842_390120",
+      "type": "VN_IMPORT_PREF",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "156_000_090111",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "156_000_100630",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "156_000_080132",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "156_000_090411",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "156_000_610910",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "156_000_640399",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "156_000_854442",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "156_000_851712",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 7,
+      "years": "2015-2021"
+    },
+    {
+      "combo": "156_000_851713",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 2,
+      "years": "2022-2023"
+    },
+    {
+      "combo": "276_000_090111",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "276_000_100630",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "276_000_080132",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "276_000_090411",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "276_000_610910",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "276_000_640399",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "276_000_854442",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "276_000_851712",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 7,
+      "years": "2015-2021"
+    },
+    {
+      "combo": "276_000_851713",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 2,
+      "years": "2022-2023"
+    },
+    {
+      "combo": "392_000_090111",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "392_000_100630",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "392_000_080132",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "392_000_090411",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "392_000_610910",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "392_000_640399",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "392_000_854442",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "392_000_851712",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 7,
+      "years": "2015-2021"
+    },
+    {
+      "combo": "392_000_851713",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 2,
+      "years": "2022-2023"
+    },
+    {
+      "combo": "410_000_090111",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "410_000_100630",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "410_000_080132",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "410_000_090411",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "410_000_610910",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "410_000_640399",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "410_000_854442",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "410_000_851712",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 7,
+      "years": "2015-2021"
+    },
+    {
+      "combo": "410_000_851713",
+      "type": "MKT_EXPORT_MFN",
+      "status": "OK",
+      "rows": 2,
+      "years": "2022-2023"
+    },
+    {
+      "combo": "842_000_090111",
+      "type": "MKT_EXPORT_MFN",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "842_000_100630",
+      "type": "MKT_EXPORT_MFN",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "842_000_080132",
+      "type": "MKT_EXPORT_MFN",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "842_000_090411",
+      "type": "MKT_EXPORT_MFN",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "842_000_610910",
+      "type": "MKT_EXPORT_MFN",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "842_000_640399",
+      "type": "MKT_EXPORT_MFN",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "842_000_854442",
+      "type": "MKT_EXPORT_MFN",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "842_000_851712",
+      "type": "MKT_EXPORT_MFN",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "842_000_851713",
+      "type": "MKT_EXPORT_MFN",
+      "status": "NO_DATA",
+      "rows": 0,
+      "years": "—"
+    },
+    {
+      "combo": "704_000_090111",
+      "type": "ANCHOR",
+      "status": "OK",
+      "rows": 9,
+      "years": "2015-2023"
+    },
+    {
+      "combo": "704_392_090111",
+      "type": "ANCHOR",
+      "status": "OK",
+      "rows": 7,
+      "years": "2015-2021"
+    }
+  ]
+}
