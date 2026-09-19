@@ -1,0 +1,126 @@
+{
+  "ran_at": "2026-09-19T04:26:04+00:00",
+  "coverage_ok_cells": 249,
+  "coverage_total_cells": 252,
+  "anchors": [
+    {
+      "flow": "X",
+      "code": "851713",
+      "anchor": 26460317776.0,
+      "sum_months": 26460317776.132996,
+      "rel": 5.026228581025564e-12,
+      "status": "MATCH"
+    },
+    {
+      "flow": "X",
+      "code": "640399",
+      "anchor": 4991396908.0,
+      "sum_months": 4991396908.065,
+      "rel": 1.3022322524406384e-11,
+      "status": "MATCH"
+    },
+    {
+      "flow": "X",
+      "code": "100630",
+      "anchor": 4060727368.0,
+      "sum_months": 4060727367.8050003,
+      "rel": 4.8020878318718676e-11,
+      "status": "MATCH"
+    },
+    {
+      "flow": "X",
+      "code": "090111",
+      "anchor": 2977954667.0,
+      "sum_months": 2977954667.2939997,
+      "rel": 9.872536852020359e-11,
+      "status": "MATCH"
+    },
+    {
+      "flow": "X",
+      "code": "080132",
+      "anchor": 2916825905.0,
+      "sum_months": 2916825905.155,
+      "rel": 5.3140027844188253e-11,
+      "status": "MATCH"
+    },
+    {
+      "flow": "X",
+      "code": "854442",
+      "anchor": 2062142409.0,
+      "sum_months": 2062142409.282,
+      "rel": 1.367510137122899e-10,
+      "status": "MATCH"
+    },
+    {
+      "flow": "X",
+      "code": "610910",
+      "anchor": 1401669880.0,
+      "sum_months": 1401669879.95,
+      "rel": 3.5671703465786235e-11,
+      "status": "MATCH"
+    },
+    {
+      "flow": "X",
+      "code": "090411",
+      "anchor": 683211713.0,
+      "sum_months": 683211712.934,
+      "rel": 9.660253693749383e-11,
+      "status": "MATCH"
+    },
+    {
+      "flow": "M",
+      "code": "854231",
+      "anchor": 17797673474.0,
+      "sum_months": 17797673473.557,
+      "rel": 2.489093836361228e-11,
+      "status": "MATCH"
+    },
+    {
+      "flow": "M",
+      "code": "847330",
+      "anchor": 928122689.0,
+      "sum_months": 928122689.0329999,
+      "rel": 3.555550742636345e-11,
+      "status": "MATCH"
+    },
+    {
+      "flow": "M",
+      "code": "851762",
+      "anchor": 841528135.0,
+      "sum_months": 841528134.711,
+      "rel": 3.434229021139922e-10,
+      "status": "MATCH"
+    },
+    {
+      "flow": "M",
+      "code": "390120",
+      "anchor": 827368947.0,
+      "sum_months": 827368947.4200001,
+      "rel": 5.076333573031057e-10,
+      "status": "MATCH"
+    },
+    {
+      "flow": "M",
+      "code": "540761",
+      "anchor": 484289054.0,
+      "sum_months": 484289054.312,
+      "rel": 6.442432965560672e-10,
+      "status": "MATCH"
+    },
+    {
+      "flow": "M",
+      "code": "721049",
+      "anchor": 137743539.0,
+      "sum_months": 137743538.996,
+      "rel": 2.9039533434898094e-11,
+      "status": "MATCH"
+    }
+  ],
+  "world_vs_partners_flags": [],
+  "fails": [],
+  "warns": [
+    "390120|X|2015: 9/12 thang",
+    "390120|X|2016: 10/12 thang",
+    "080132|M|2016: 11/12 thang"
+  ]
+}
