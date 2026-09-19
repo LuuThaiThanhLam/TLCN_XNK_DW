@@ -1,0 +1,450 @@
+{
+  "ran_at": "2026-09-19T04:43:37+00:00",
+  "total_rows": 13252,
+  "info_extra": 4873,
+  "validations": [
+    {
+      "case_id": "EXP_JPN_COFFEE_202301",
+      "cell": [
+        "392",
+        "M",
+        "090111",
+        "202301"
+      ],
+      "week1_value": 16784397.261,
+      "mirror_value": 16784397.261,
+      "status": "MATCH"
+    },
+    {
+      "case_id": "EXP_JPN_COFFEE_202401",
+      "cell": [
+        "392",
+        "M",
+        "090111",
+        "202401"
+      ],
+      "week1_value": 35660719.503,
+      "mirror_value": 35660719.503,
+      "status": "MATCH"
+    },
+    {
+      "case_id": "EXP_USA_COFFEE_202301",
+      "cell": [
+        "842",
+        "M",
+        "090111",
+        "202301"
+      ],
+      "week1_value": 37790801.0,
+      "mirror_value": 37790801.0,
+      "status": "MATCH"
+    },
+    {
+      "case_id": "EXP_DEU_COFFEE_202301",
+      "cell": [
+        "276",
+        "M",
+        "090111",
+        "202301"
+      ],
+      "week1_value": 38271554.955,
+      "mirror_value": 38271554.955,
+      "status": "MATCH"
+    },
+    {
+      "case_id": "IMP_CHN_NETWORK_EQUIP_202301",
+      "cell": [
+        "156",
+        "X",
+        "851762",
+        "202301"
+      ],
+      "week1_value": 29945226.0,
+      "mirror_value": 29945226.0,
+      "status": "MATCH"
+    },
+    {
+      "case_id": "IMP_KOR_INTEGRATED_CIRCUITS_202301",
+      "cell": [
+        "410",
+        "X",
+        "854231",
+        "202301"
+      ],
+      "week1_value": 217401413.0,
+      "mirror_value": 217401413.0,
+      "status": "MATCH"
+    },
+    {
+      "case_id": "IMP_CHN_NETWORK_EQUIP_202401",
+      "cell": [
+        "156",
+        "X",
+        "851762",
+        "202401"
+      ],
+      "week1_value": 62727085.0,
+      "mirror_value": 62727085.0,
+      "status": "MATCH"
+    },
+    {
+      "case_id": "IMP_KOR_INTEGRATED_CIRCUITS_202401",
+      "cell": [
+        "410",
+        "X",
+        "854231",
+        "202401"
+      ],
+      "week1_value": 412589570.0,
+      "mirror_value": 412589570.0,
+      "status": "MATCH"
+    }
+  ],
+  "log": [
+    {
+      "batch_id": "mir_156_2015",
+      "status": "SKIP (cache)",
+      "rows": 0,
+      "mode": "cache"
+    },
+    {
+      "batch_id": "mir_276_2015",
+      "status": "SKIP (cache)",
+      "rows": 236,
+      "mode": "cache"
+    },
+    {
+      "batch_id": "mir_392_2015",
+      "status": "SKIP (cache)",
+      "rows": 252,
+      "mode": "cache"
+    },
+    {
+      "batch_id": "mir_410_2015",
+      "status": "SKIP (cache)",
+      "rows": 262,
+      "mode": "cache"
+    },
+    {
+      "batch_id": "mir_842_2015",
+      "status": "SKIP (cache)",
+      "rows": 255,
+      "mode": "cache"
+    },
+    {
+      "batch_id": "mir_156_2016",
+      "status": "OK",
+      "rows": 276,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_276_2016",
+      "status": "OK",
+      "rows": 245,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_392_2016",
+      "status": "OK",
+      "rows": 250,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_410_2016",
+      "status": "OK",
+      "rows": 280,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_842_2016",
+      "status": "OK",
+      "rows": 264,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_156_2017",
+      "status": "OK",
+      "rows": 286,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_276_2017",
+      "status": "OK",
+      "rows": 251,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_392_2017",
+      "status": "OK",
+      "rows": 249,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_410_2017",
+      "status": "OK",
+      "rows": 294,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_842_2017",
+      "status": "OK",
+      "rows": 268,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_156_2018",
+      "status": "OK",
+      "rows": 288,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_276_2018",
+      "status": "OK",
+      "rows": 266,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_392_2018",
+      "status": "OK",
+      "rows": 250,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_410_2018",
+      "status": "OK",
+      "rows": 286,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_842_2018",
+      "status": "OK",
+      "rows": 265,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_156_2019",
+      "status": "OK",
+      "rows": 290,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_276_2019",
+      "status": "OK",
+      "rows": 260,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_392_2019",
+      "status": "OK",
+      "rows": 255,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_410_2019",
+      "status": "OK",
+      "rows": 286,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_842_2019",
+      "status": "OK",
+      "rows": 265,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_156_2020",
+      "status": "OK",
+      "rows": 288,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_276_2020",
+      "status": "OK",
+      "rows": 266,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_392_2020",
+      "status": "OK",
+      "rows": 254,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_410_2020",
+      "status": "OK",
+      "rows": 285,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_842_2020",
+      "status": "OK",
+      "rows": 262,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_156_2021",
+      "status": "OK",
+      "rows": 286,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_276_2021",
+      "status": "OK",
+      "rows": 257,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_392_2021",
+      "status": "OK",
+      "rows": 266,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_410_2021",
+      "status": "OK",
+      "rows": 286,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_842_2021",
+      "status": "OK",
+      "rows": 258,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_156_2022",
+      "status": "OK",
+      "rows": 287,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_276_2022",
+      "status": "OK",
+      "rows": 263,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_392_2022",
+      "status": "OK",
+      "rows": 272,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_410_2022",
+      "status": "OK",
+      "rows": 290,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_842_2022",
+      "status": "OK",
+      "rows": 270,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_156_2023",
+      "status": "OK",
+      "rows": 294,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_276_2023",
+      "status": "OK",
+      "rows": 263,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_392_2023",
+      "status": "OK",
+      "rows": 270,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_410_2023",
+      "status": "OK",
+      "rows": 292,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_842_2023",
+      "status": "OK",
+      "rows": 271,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_156_2024",
+      "status": "OK",
+      "rows": 292,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_276_2024",
+      "status": "OK",
+      "rows": 272,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_392_2024",
+      "status": "OK",
+      "rows": 268,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_410_2024",
+      "status": "OK",
+      "rows": 297,
+      "mode": "dual-flow",
+      "note": ""
+    },
+    {
+      "batch_id": "mir_842_2024",
+      "status": "OK",
+      "rows": 264,
+      "mode": "dual-flow",
+      "note": ""
+    }
+  ]
+}
