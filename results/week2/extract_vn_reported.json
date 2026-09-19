@@ -1,0 +1,256 @@
+{
+  "ran_at": "2026-09-19T03:54:10+00:00",
+  "years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "total_rows": 13725,
+  "rows_by_year_flow": {
+    "M|2015": 638,
+    "M|2016": 662,
+    "M|2017": 668,
+    "M|2018": 669,
+    "M|2019": 678,
+    "M|2020": 683,
+    "M|2021": 670,
+    "M|2022": 753,
+    "M|2023": 740,
+    "X|2015": 798,
+    "X|2016": 812,
+    "X|2017": 816,
+    "X|2018": 824,
+    "X|2019": 840,
+    "X|2020": 814,
+    "X|2021": 841,
+    "X|2022": 913,
+    "X|2023": 906
+  },
+  "months_by_code": {
+    "080132": 108,
+    "090111": 108,
+    "090411": 108,
+    "100630": 108,
+    "390120": 108,
+    "540761": 108,
+    "610910": 108,
+    "640399": 108,
+    "721049": 108,
+    "847330": 108,
+    "851713": 24,
+    "851762": 108,
+    "854231": 108,
+    "854442": 108
+  },
+  "validations": [
+    {
+      "case_id": "EXP_JPN_COFFEE_202301",
+      "cell": [
+        "X",
+        "392",
+        "090111",
+        "202301"
+      ],
+      "week1_value": 10127757.599,
+      "extract_value": 10127757.599,
+      "status": "MATCH"
+    },
+    {
+      "case_id": "EXP_USA_COFFEE_202301",
+      "cell": [
+        "X",
+        "842",
+        "090111",
+        "202301"
+      ],
+      "week1_value": 20201618.072,
+      "extract_value": 20201618.072,
+      "status": "MATCH"
+    },
+    {
+      "case_id": "EXP_DEU_COFFEE_202301",
+      "cell": [
+        "X",
+        "276",
+        "090111",
+        "202301"
+      ],
+      "week1_value": 41199796.464,
+      "extract_value": 41199796.464,
+      "status": "MATCH"
+    },
+    {
+      "case_id": "IMP_CHN_NETWORK_EQUIP_202301",
+      "cell": [
+        "M",
+        "156",
+        "851762",
+        "202301"
+      ],
+      "week1_value": 29869079.442,
+      "extract_value": 29869079.442,
+      "status": "MATCH"
+    },
+    {
+      "case_id": "IMP_KOR_INTEGRATED_CIRCUITS_202301",
+      "cell": [
+        "M",
+        "410",
+        "854231",
+        "202301"
+      ],
+      "week1_value": 252083766.166,
+      "extract_value": 252083766.166,
+      "status": "MATCH"
+    }
+  ],
+  "fetch_log": [
+    {
+      "batch_id": "vn_X_2015",
+      "status": "SKIP (cache)",
+      "rows": 798,
+      "mode": "cache",
+      "note": "OK"
+    },
+    {
+      "batch_id": "vn_X_2016",
+      "status": "OK",
+      "rows": 812,
+      "mode": "single",
+      "note": "OK"
+    },
+    {
+      "batch_id": "vn_X_2017",
+      "status": "OK",
+      "rows": 816,
+      "mode": "single",
+      "note": "OK"
+    },
+    {
+      "batch_id": "vn_X_2018",
+      "status": "OK",
+      "rows": 824,
+      "mode": "single",
+      "note": "OK"
+    },
+    {
+      "batch_id": "vn_X_2019",
+      "status": "OK",
+      "rows": 840,
+      "mode": "single",
+      "note": "OK"
+    },
+    {
+      "batch_id": "vn_X_2020",
+      "status": "OK",
+      "rows": 814,
+      "mode": "single",
+      "note": "OK"
+    },
+    {
+      "batch_id": "vn_X_2021",
+      "status": "OK",
+      "rows": 841,
+      "mode": "single",
+      "note": "OK"
+    },
+    {
+      "batch_id": "vn_X_2022",
+      "status": "OK",
+      "rows": 913,
+      "mode": "single",
+      "note": "OK"
+    },
+    {
+      "batch_id": "vn_X_2023",
+      "status": "OK",
+      "rows": 906,
+      "mode": "single",
+      "note": "OK"
+    },
+    {
+      "batch_id": "vn_X_2024",
+      "status": "OK",
+      "rows": 0,
+      "mode": "single",
+      "note": "OK"
+    },
+    {
+      "batch_id": "vn_M_2015",
+      "status": "SKIP (cache)",
+      "rows": 638,
+      "mode": "cache",
+      "note": "OK"
+    },
+    {
+      "batch_id": "vn_M_2016",
+      "status": "OK",
+      "rows": 662,
+      "mode": "single",
+      "note": "OK"
+    },
+    {
+      "batch_id": "vn_M_2017",
+      "status": "OK",
+      "rows": 668,
+      "mode": "single",
+      "note": "OK"
+    },
+    {
+      "batch_id": "vn_M_2018",
+      "status": "OK",
+      "rows": 669,
+      "mode": "single",
+      "note": "OK"
+    },
+    {
+      "batch_id": "vn_M_2019",
+      "status": "OK",
+      "rows": 678,
+      "mode": "single",
+      "note": "OK"
+    },
+    {
+      "batch_id": "vn_M_2020",
+      "status": "OK",
+      "rows": 683,
+      "mode": "single",
+      "note": "OK"
+    },
+    {
+      "batch_id": "vn_M_2021",
+      "status": "OK",
+      "rows": 670,
+      "mode": "single",
+      "note": "OK"
+    },
+    {
+      "batch_id": "vn_M_2022",
+      "status": "OK",
+      "rows": 753,
+      "mode": "single",
+      "note": "OK"
+    },
+    {
+      "batch_id": "vn_M_2023",
+      "status": "OK",
+      "rows": 740,
+      "mode": "single",
+      "note": "OK"
+    },
+    {
+      "batch_id": "vn_M_2024",
+      "status": "OK",
+      "rows": 0,
+      "mode": "single",
+      "note": "OK"
+    }
+  ]
+}
