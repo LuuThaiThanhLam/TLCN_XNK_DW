@@ -1,6 +1,6 @@
 # MIRROR PARTNER — TUAN 2 NV3
 
-- Chat luc: 2026-09-19T04:43:37+00:00
+- Chat luc: 2026-09-22T08:47:09+00:00
 - Goc nhin: PARTNER_MIRROR (reporter = doi tac, partner = 704). Khong bao gio trộn số với VN_REPORTED.
 - Nam: 2015–2024. Ma dien thoai tu dong chuyen theo nam (<2022: 851712; tu 2022: 851713).
 - Tong dong: **13252** (RECON: 8379 | INFO_EXTRA: 4873) → `data/staging/stg_comtrade_partner_mirror.csv` (khong commit).
@@ -116,11 +116,11 @@
 
 | Batch | Trang thai | So dong | Mode |
 |---|---|---:|---|
-| mir_156_2015 | SKIP (cache) | 0 | cache |
-| mir_276_2015 | SKIP (cache) | 236 | cache |
-| mir_392_2015 | SKIP (cache) | 252 | cache |
-| mir_410_2015 | SKIP (cache) | 262 | cache |
-| mir_842_2015 | SKIP (cache) | 255 | cache |
+| mir_156_2015 | OK | 0 | dual-flow |
+| mir_276_2015 | OK | 236 | dual-flow |
+| mir_392_2015 | OK | 252 | dual-flow |
+| mir_410_2015 | OK | 262 | dual-flow |
+| mir_842_2015 | OK | 255 | dual-flow |
 | mir_156_2016 | OK | 276 | dual-flow |
 | mir_276_2016 | OK | 245 | dual-flow |
 | mir_392_2016 | OK | 250 | dual-flow |

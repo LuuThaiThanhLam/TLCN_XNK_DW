@@ -1,5 +1,5 @@
 {
-  "ran_at": "2026-09-19T04:43:37+00:00",
+  "ran_at": "2026-09-22T08:47:09+00:00",
   "total_rows": 13252,
   "info_extra": 4873,
   "validations": [
@@ -103,33 +103,38 @@
   "log": [
     {
       "batch_id": "mir_156_2015",
-      "status": "SKIP (cache)",
+      "status": "OK",
       "rows": 0,
-      "mode": "cache"
+      "mode": "dual-flow",
+      "note": ""
     },
     {
       "batch_id": "mir_276_2015",
-      "status": "SKIP (cache)",
+      "status": "OK",
       "rows": 236,
-      "mode": "cache"
+      "mode": "dual-flow",
+      "note": ""
     },
     {
       "batch_id": "mir_392_2015",
-      "status": "SKIP (cache)",
+      "status": "OK",
       "rows": 252,
-      "mode": "cache"
+      "mode": "dual-flow",
+      "note": ""
     },
     {
       "batch_id": "mir_410_2015",
-      "status": "SKIP (cache)",
+      "status": "OK",
       "rows": 262,
-      "mode": "cache"
+      "mode": "dual-flow",
+      "note": ""
     },
     {
       "batch_id": "mir_842_2015",
-      "status": "SKIP (cache)",
+      "status": "OK",
       "rows": 255,
-      "mode": "cache"
+      "mode": "dual-flow",
+      "note": ""
     },
     {
       "batch_id": "mir_156_2016",

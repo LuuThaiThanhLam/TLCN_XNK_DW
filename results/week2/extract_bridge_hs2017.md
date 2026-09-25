@@ -1,6 +1,6 @@
 # BRIDGE HS2017 851712 → 851713 — TUAN 2 NV2b
 
-- Chat luc: 2026-09-19T04:11:59+00:00
+- Chat luc: 2026-09-22T08:33:22+00:00
 - Ly do: audit coverage NV2 phat hien 851713 chi co 24/108 thang (revision HS 2022).
 - Extract 851712 cho 2015–2021, X+M, 6 partner, grain thang.
 - Tong dong staging: **958** → `data/staging/stg_comtrade_vn_reported_bridge.csv` (khong commit).

@@ -1,12 +1,12 @@
 # KEY CHECK RESULTS — TUAN 2 (NHIEM VU 1, BAN 2)
 
-- Chay luc: 2026-09-19T03:43:35+00:00
-- Key tai duoc: CO (4cf9****(dai 32))
+- Chay luc: 2026-09-22T08:24:33+00:00
+- Key tai duoc: CO (e8f8****(dai 32))
 - Ket luan tong: **PASS**
 
 | # | Kiem tra | Dat | Chi tiet |
 |---:|---|:---:|---|
-| 1 | 1. Key duoc doc tu moi truong/.env | ✅ | 4cf9****(dai 32) |
+| 1 | 1. Key duoc doc tu moi truong/.env | ✅ | e8f8****(dai 32) |
 | 2 | 2. data/v1/get annual 2023 TOTAL | ✅ | HTTP 200, count=1, value=353077513296.001, note=OK |
 | 3 | 3a. monthly mot ky don (201501) | ✅ | HTTP 200, count=1, note=OK |
 | 4 | 3b. monthly 12 ky cach bang DAU PHAY (dinh dang API moi) | ✅ | HTTP 200, count=12, so ky=12 ['201501', '201502', '201503']...['201511', '201512'], note=OK |

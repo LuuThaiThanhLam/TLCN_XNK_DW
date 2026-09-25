@@ -1,15 +1,15 @@
 {
-  "ran_at": "2026-09-19T03:43:35+00:00",
+  "ran_at": "2026-09-22T08:24:33+00:00",
   "script_version": 2,
   "mode": "verify_comtrade_key",
   "key_present": true,
-  "key_masked": "4cf9****(dai 32)",
+  "key_masked": "e8f8****(dai 32)",
   "all_passed": true,
   "checks": [
     {
       "name": "1. Key duoc doc tu moi truong/.env",
       "passed": true,
-      "detail": "4cf9****(dai 32)"
+      "detail": "e8f8****(dai 32)"
     },
     {
       "name": "2. data/v1/get annual 2023 TOTAL",

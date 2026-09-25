@@ -1,0 +1,58 @@
+{
+  "core_raw": {
+    "agg_true": 0,
+    "agg_false": 3018,
+    "bil_true": 19698,
+    "bil_false": 5219,
+    "files": 84,
+    "files_unread": 0
+  },
+  "core_false_by_reporter": {
+    "704": 5658,
+    "276": 2579
+  },
+  "mirror_staging_total": 13252,
+  "mirror_pct_est_recon": 19.43,
+  "mirror_by_reporter": {
+    "156": {
+      "rows": 2587,
+      "estimated": 0
+    },
+    "276": {
+      "rows": 2579,
+      "estimated": 2579
+    },
+    "392": {
+      "rows": 2586,
+      "estimated": 0
+    },
+    "410": {
+      "rows": 2858,
+      "estimated": 0
+    },
+    "842": {
+      "rows": 2642,
+      "estimated": 0
+    }
+  },
+  "mirror_by_role": {
+    "INFO_EXTRA": {
+      "rows": 4873,
+      "estimated": 951
+    },
+    "RECON_VN_EXPORT": {
+      "rows": 4620,
+      "estimated": 960
+    },
+    "RECON_VN_IMPORT": {
+      "rows": 3759,
+      "estimated": 668
+    }
+  },
+  "core_pct_bil_est": 20.95,
+  "core_pct_agg_est": 100.0,
+  "recommendations": [
+    "core: bilateral sach → khong can lua chon loc cho VN_REPORTED.",
+    "mirror: RECON sach → view reconciliation dung het, chi giu cot is_reported nhu thong tin, khong loc."
+  ]
+}

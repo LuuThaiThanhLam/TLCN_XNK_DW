@@ -1,6 +1,6 @@
 # WB MACRO — TUAN 2 NV4b
 
-- Chat luc: 2026-09-19T05:01:17+00:00 | Pham vi: 5 chi so x 6 nuoc x 2015:2024
+- Chat luc: 2026-09-22T08:52:24+00:00 | Pham vi: 5 chi so x 6 nuoc x 2015:2024
 - Tong dong staging: **300** → `data/staging/stg_wb_macro.csv` (khong commit)
 
 | Country | So dong |

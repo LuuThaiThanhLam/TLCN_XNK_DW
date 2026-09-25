@@ -1,7 +1,7 @@
 # Báo cáo tuần 2 — Extract dữ liệu đa nguồn, QA bằng validation chéo
 
 **Đề tài:** Xây dựng Kho dữ liệu hỗ trợ phân tích và ra quyết định xuất nhập khẩu hàng hóa Việt Nam
-**Sinh lúc:** 2026-09-19T05:14:45+00:00 — bởi `scripts/profiling/gen_week2_report.py` (mọi số liệu đọc tự động từ `results/week2/*.json` đã commit; file nào thiếu báo MISSING, không điền tay).
+**Sinh lúc:** 2026-09-22T08:52:25+00:00 — bởi `scripts/profiling/gen_week2_report.py` (mọi số liệu đọc tự động từ `results/week2/*.json` đã commit; file nào thiếu báo MISSING, không điền tay).
 
 ## 1. Bảng hoàn thành
 
@@ -12,7 +12,7 @@
 | NV2b — bridge 851712 (HS2017) | PASS | staging=958 dong; batch OK=14/14; annual-check MATCH=4/14 (WARN con lại = đặc tính nguồn A-vs-ΣM, xem muc 5) |
 | NV2-audit — coverage toàn phạm vi | PASS | 249/252 o 12/12 thang; neo 2023: MATCH 14/14; fails=0, warns=3 |
 | NV3 — mirror 5 đối tác | PASS | staging=13252 dong (RECON=8379, INFO_EXTRA=4873); batch dat=50/50; validation vs mirror tuần 1: **8/8 MATCH** |
-| NV4a — WITS biểu thuế | PASS | staging=419 dong; combo OK/SKIP/REBUILT=55/83, NO_DATA=28 (my + vai cap song phuong); anchors MFN/PREF 2018: **2/2 MATCH** |
+| NV4a — WITS biểu thuế | PASS | staging=419 dong; combo OK/SKIP/REBUILT=54/83, NO_DATA=29 (my + vai cap song phuong); anchors MFN/PREF 2018: **2/2 MATCH** |
 | NV4b — WB macro 6 nước × 5 chỉ số | PASS | staging=300 dong; anchors WB 2024: **2/2 MATCH** |
 
 **QA tổng tuần: PASS** — đủ 7/7 nguồn bằng chứng.

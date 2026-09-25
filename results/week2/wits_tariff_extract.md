@@ -1,7 +1,7 @@
 # WITS THU QUAN — TUAN 2 NV4a
 
-- Chat luc: 2026-09-19T05:04:05+00:00 | WITS/UNCTAD TRAINS, mien phi, khong key (UA trinh duyet bat buoc — Cloudflare).
-- Combo dat: 55 | NO_DATA (nuoc khong bao cao TRAINS cho cap do): 28
+- Chat luc: 2026-09-22T08:49:59+00:00 | WITS/UNCTAD TRAINS, mien phi, khong key (UA trinh duyet bat buoc — Cloudflare).
+- Combo dat: 54 | NO_DATA (nuoc khong bao cao TRAINS cho cap do): 29
 - Tong dong staging: **419** (nam >= 2015) → `data/staging/stg_wits_tariff.csv` (khong commit)
 - Nam toi da co du lieu: 2023 — WITS lag ~1-2 nam → D4 dung thu theo nam (khong monthly), khong doi 2024.
 
@@ -9,8 +9,8 @@
 
 | Nhom | Combos | Dat | Dong | Y nghia |
 |---|---:|---:|---:|---|
-| VN_IMPORT_MFN | 6 | 6 | 125 | thue MFN VN ap len dau vao san xuat |
-| VN_IMPORT_PREF | 30 | 11 | 65 | MFN/PREF VN ap theo goc xu xu (song phuong phia VN bao cao) |
+| VN_IMPORT_MFN | 6 | 6 | 54 | thue MFN VN ap len dau vao san xuat |
+| VN_IMPORT_PREF | 30 | 10 | 61 | MFN/PREF VN ap theo goc xu xu (song phuong phia VN bao cao) |
 | MKT_EXPORT_MFN | 45 | 36 | 288 | MFN cua thi truong ap len hang VN (xap xi — khong phai bilatral) |
 | ANCHOR | 2 | 2 | 16 | 2 o kiem chung vs tuan 1 |
 
@@ -25,14 +25,14 @@
 
 | Combo | Nhom | Trang thai | Dong | Nam |
 |---|---|---|---:|---|
-| 704_000_851762 | VN_IMPORT_MFN | SKIP | 15 |  |
-| 704_000_854231 | VN_IMPORT_MFN | SKIP | 15 |  |
-| 704_000_847330 | VN_IMPORT_MFN | SKIP | 24 |  |
-| 704_000_721049 | VN_IMPORT_MFN | SKIP | 24 |  |
-| 704_000_540761 | VN_IMPORT_MFN | SKIP | 23 |  |
-| 704_000_390120 | VN_IMPORT_MFN | SKIP | 24 |  |
-| 704_156_851762 | VN_IMPORT_PREF | SKIP | 11 |  |
-| 704_156_854231 | VN_IMPORT_PREF | SKIP | 0 |  |
+| 704_000_851762 | VN_IMPORT_MFN | OK | 9 | 2015-2023 |
+| 704_000_854231 | VN_IMPORT_MFN | OK | 9 | 2015-2023 |
+| 704_000_847330 | VN_IMPORT_MFN | OK | 9 | 2015-2023 |
+| 704_000_721049 | VN_IMPORT_MFN | OK | 9 | 2015-2023 |
+| 704_000_540761 | VN_IMPORT_MFN | OK | 9 | 2015-2023 |
+| 704_000_390120 | VN_IMPORT_MFN | OK | 9 | 2015-2023 |
+| 704_156_851762 | VN_IMPORT_PREF | OK | 7 | 2015-2021 |
+| 704_156_854231 | VN_IMPORT_PREF | NO_DATA | 0 | — |
 | 704_156_847330 | VN_IMPORT_PREF | NO_DATA | 0 | — |
 | 704_156_721049 | VN_IMPORT_PREF | OK | 7 | 2015-2021 |
 | 704_156_540761 | VN_IMPORT_PREF | OK | 7 | 2015-2021 |

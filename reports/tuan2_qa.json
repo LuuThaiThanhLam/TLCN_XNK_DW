@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T05:14:45+00:00",
+  "generated_at": "2026-09-22T08:52:25+00:00",
   "overall": "PASS",
   "missing_files": [],
   "tasks": [
@@ -37,7 +37,7 @@
       "name": "NV4a — WITS biểu thuế",
       "tag": "NV4a  WITS biu thu",
       "status": "PASS",
-      "metrics": "staging=419 dong; combo OK/SKIP/REBUILT=55/83, NO_DATA=28 (my + vai cap song phuong); anchors MFN/PREF 2018: **2/2 MATCH**"
+      "metrics": "staging=419 dong; combo OK/SKIP/REBUILT=54/83, NO_DATA=29 (my + vai cap song phuong); anchors MFN/PREF 2018: **2/2 MATCH**"
     },
     {
       "name": "NV4b — WB macro 6 nước × 5 chỉ số",
