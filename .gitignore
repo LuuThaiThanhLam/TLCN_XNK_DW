@@ -1,33 +1,31 @@
+# Secrets & Environment
+.env
+*.env.local
+
 # Python
 __pycache__/
 *.py[cod]
 .venv/
-venv/
-.env
+.pytest_cache/
 
-# OS / Editor
+# Data raw/runtime artifacts
+data/raw/
+data/runtime_staging/
+*.db
+*.sqlite3
+
+# dbt artifacts
+dbt_project/target/
+dbt_project/dbt_packages/
+dbt_project/logs/
+
+# Airflow runtime logs
+airflow/logs/
+airflow/*.pid
+airflow/*.cfg
+
+# OS / IDE
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
-
-# Secrets
-*.key
-*.pem
-.env.local
-
-# Large/generated data - keep folders by .gitkeep only
-data/raw/*
-!data/raw/.gitkeep
-data/staging/*
-!data/staging/.gitkeep
-data/processed/*
-!data/processed/.gitkeep
-results/*
-!results/.gitkeep
-!results/week*/
-
-# Office temp
-~$*.docx
-~$*.xlsx
-~$*.pptx

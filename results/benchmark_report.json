@@ -1,0 +1,110 @@
+{
+  "ran_at": "2026-11-24T06:47:17+00:00",
+  "benchmarks": [
+    {
+      "id": "B1",
+      "name": "Annual Trade Rollup (Year x Region x Flow)",
+      "pg_core": {
+        "cold_ms": 48.75,
+        "warm_avg_ms": 40.25,
+        "rows": 90,
+        "explain": "Execution=49.59ms"
+      },
+      "pg_opt": {
+        "cold_ms": 6.61,
+        "warm_avg_ms": 5.34,
+        "rows": 90,
+        "explain": "Execution=4.97ms"
+      },
+      "ch_olap": {
+        "cold_ms": 26.3,
+        "warm_avg_ms": 23.18,
+        "rows": 90
+      }
+    },
+    {
+      "id": "B2",
+      "name": "Bilateral Trade Balance (14 HS6 Scope)",
+      "pg_core": {
+        "cold_ms": 38.41,
+        "warm_avg_ms": 37.97,
+        "rows": 864,
+        "explain": "Execution=44.39ms"
+      },
+      "pg_opt": {
+        "cold_ms": 2.29,
+        "warm_avg_ms": 1.95,
+        "rows": 864,
+        "explain": "Execution=0.25ms"
+      },
+      "ch_olap": {
+        "cold_ms": 24.92,
+        "warm_avg_ms": 22.68,
+        "rows": 864
+      }
+    },
+    {
+      "id": "B3",
+      "name": "Market Concentration Index (HHI & CR-4)",
+      "pg_core": {
+        "cold_ms": 48.53,
+        "warm_avg_ms": 47.4,
+        "rows": 18,
+        "explain": "Execution=60.49ms"
+      },
+      "pg_opt": {
+        "cold_ms": 1.13,
+        "warm_avg_ms": 0.33,
+        "rows": 18,
+        "explain": "Execution=0.01ms"
+      },
+      "ch_olap": {
+        "cold_ms": 24.11,
+        "warm_avg_ms": 21.4,
+        "rows": 18
+      }
+    },
+    {
+      "id": "B4",
+      "name": "Partition Pruning Slice (Year = 2023 x Commodity)",
+      "pg_core": {
+        "cold_ms": 4.53,
+        "warm_avg_ms": 4.21,
+        "rows": 28,
+        "explain": "Execution=4.02ms"
+      },
+      "pg_opt": {
+        "cold_ms": 7.23,
+        "warm_avg_ms": 4.48,
+        "rows": 28,
+        "explain": "Execution=4.49ms"
+      },
+      "ch_olap": {
+        "cold_ms": 8.81,
+        "warm_avg_ms": 9.04,
+        "rows": 28
+      }
+    },
+    {
+      "id": "B5",
+      "name": "2024 Mirror Reconciliation & Coverage Aggregation",
+      "pg_core": {
+        "cold_ms": 179.42,
+        "warm_avg_ms": 171.25,
+        "rows": 1,
+        "explain": "Execution=199.39ms"
+      },
+      "pg_opt": {
+        "cold_ms": 13.87,
+        "warm_avg_ms": 10.48,
+        "rows": 1,
+        "explain": "Execution=9.80ms"
+      },
+      "ch_olap": {
+        "cold_ms": 8.62,
+        "warm_avg_ms": 6.43,
+        "rows": 1
+      }
+    }
+  ]
+}

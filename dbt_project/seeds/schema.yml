@@ -1,0 +1,42 @@
+version: 2
+
+seeds:
+  - name: ref_country_codes
+    description: "Danh mục chuẩn hóa 98 thực thể quốc gia/vùng lãnh thổ (M49, ISO3, khu vực, nhóm thu nhập, FTA với Việt Nam)."
+    columns:
+      - name: code_comtrade
+        tests:
+          - unique
+          - not_null
+
+  - name: ref_cif_fob_factor
+    description: "Bảng tham chiếu 13 hệ số quy đổi chênh lệch chi phí vận tải & bảo hiểm CIF -> FOB theo nhóm ngành hàng và tuyến hàng hải."
+    columns:
+      - name: commodity_group
+        tests:
+          - not_null
+      - name: transport_route
+        tests:
+          - not_null
+      - name: factor_pct
+        tests:
+          - not_null
+
+  - name: ref_hs_bridge
+    description: "Bảng cầu nối chuyển đổi phiên bản danh mục hàng hóa WCO (HS2017 -> HS2022) theo nguyên tắc As-Is vs As-Mapped."
+    columns:
+      - name: hs6_source
+        tests:
+          - unique
+          - not_null
+      - name: hs6_target
+        tests:
+          - not_null
+
+  - name: dw_usage_rule
+    description: "Bảng nội quy quản trị tính cộng gộp (Summarizability Governance Rules R1-R5) nhúng trực tiếp trong Kho dữ liệu."
+    columns:
+      - name: rule_id
+        tests:
+          - unique
+          - not_null

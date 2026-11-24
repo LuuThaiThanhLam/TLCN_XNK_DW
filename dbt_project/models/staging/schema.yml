@@ -1,0 +1,57 @@
+version: 2
+
+models:
+  - name: stg_comtrade_vn
+    description: "Chuẩn hóa dữ liệu VN_REPORTED từ raw.vn_reported, zero-pad HS6 và gán nhãn cầu nối As-Is."
+    columns:
+      - name: date_key
+        tests: [not_null]
+      - name: partner_code
+        tests: [not_null]
+      - name: hs6_mapped
+        tests: [not_null]
+      - name: flow_code
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['X', 'M']
+
+  - name: stg_comtrade_mirror
+    description: "Chuẩn hóa dữ liệu PARTNER_MIRROR, tách rõ reporter_code (đối tác) và partner_code_src ('704')."
+    columns:
+      - name: date_key
+        tests: [not_null]
+      - name: partner_code_comtrade
+        tests: [not_null]
+      - name: hs6_mapped
+        tests: [not_null]
+      - name: flow_code
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['X', 'M']
+
+  - name: stg_wits_tariff
+    description: "Chuẩn hóa biểu thuế WITS MFN/PREF với Year Sentinel YYYY00 và ánh xạ đối tác chuẩn hóa (bao gồm ANCHOR)."
+    columns:
+      - name: date_key
+        tests: [not_null]
+      - name: partner_code_comtrade
+        tests: [not_null]
+      - name: hs6_mapped
+        tests: [not_null]
+      - name: tariff_type_code
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['MFN', 'PREF']
+
+  - name: stg_wb_macro
+    description: "Chuẩn hóa chỉ số vĩ mô World Bank WDI v2 với Year Sentinel YYYY00 và chuyển đổi số khoa học."
+    columns:
+      - name: date_key
+        tests: [not_null]
+      - name: country_iso3
+        tests: [not_null]
+      - name: code_wb
+        tests: [not_null]

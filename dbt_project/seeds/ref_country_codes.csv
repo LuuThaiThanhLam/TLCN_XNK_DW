@@ -1,0 +1,99 @@
+﻿code_comtrade,iso3,iso2,country_name_en,country_name_vi,region,sub_region,income_group,is_aggregate,has_fta_with_vn,fta_name
+0,,,World,Thế giới,Toàn cầu,Toàn cầu,Toàn cầu,1,0,
+12,DZA,DZ,Algeria,Algérie,Châu Phi,Bắc Phi,Thu nhập trung bình cao,0,0,
+24,AGO,AO,Angola,Angola,Châu Phi,Trung Phi,Thu nhập trung bình thấp,0,0,
+31,AZE,AZ,Azerbaijan,Azerbaijan,Châu Á,Tây Á,Thu nhập trung bình cao,0,0,
+32,ARG,AR,Argentina,Argentina,Châu Mỹ,Nam Mỹ,Thu nhập trung bình cao,0,0,
+36,AUS,AU,Australia,Úc,Châu Đại Dương,Úc và New Zealand,Thu nhập cao,0,1,"CPTPP, RCEP, AANZFTA"
+40,AUT,AT,Austria,Áo,Châu Âu,Tây Âu,Thu nhập cao,0,1,EVFTA
+50,BGD,BD,Bangladesh,Bangladesh,Châu Á,Nam Á,Thu nhập trung bình thấp,0,0,
+56,BEL,BE,Belgium,Bỉ,Châu Âu,Tây Âu,Thu nhập cao,0,1,EVFTA
+76,BRA,BR,Brazil,Brazil,Châu Mỹ,Nam Mỹ,Thu nhập trung bình cao,0,0,
+96,BRN,BN,Brunei Darussalam,Brunei,Châu Á,Đông Nam Á,Thu nhập cao,0,1,"ASEAN, CPTPP, RCEP"
+100,BGR,BG,Bulgaria,Bulgaria,Châu Âu,Đông Âu,Thu nhập cao,0,1,EVFTA
+104,MMR,MM,Myanmar,Myanmar,Châu Á,Đông Nam Á,Thu nhập trung bình thấp,0,1,"ASEAN, RCEP"
+112,BLR,BY,Belarus,Belarus,Châu Âu,Đông Âu,Thu nhập trung bình cao,0,1,VN-EAEU
+116,KHM,KH,Cambodia,Campuchia,Châu Á,Đông Nam Á,Thu nhập trung bình thấp,0,1,"ASEAN, RCEP"
+120,CMR,CM,Cameroon,Cameroon,Châu Phi,Trung Phi,Thu nhập trung bình thấp,0,0,
+124,CAN,CA,Canada,Canada,Châu Mỹ,Bắc Mỹ,Thu nhập cao,0,1,CPTPP
+144,LKA,LK,Sri Lanka,Sri Lanka,Châu Á,Nam Á,Thu nhập trung bình thấp,0,0,
+152,CHL,CL,Chile,Chile,Châu Mỹ,Nam Mỹ,Thu nhập cao,0,1,"CPTPP, VCFTA"
+156,CHN,CN,China,Trung Quốc,Châu Á,Đông Á,Thu nhập trung bình cao,0,1,"RCEP, ACFTA"
+170,COL,CO,Colombia,Colombia,Châu Mỹ,Nam Mỹ,Thu nhập trung bình cao,0,0,
+178,COG,CG,Congo,Congo,Châu Phi,Trung Phi,Thu nhập trung bình thấp,0,0,
+188,CRI,CR,Costa Rica,Costa Rica,Châu Mỹ,Trung Mỹ,Thu nhập trung bình cao,0,0,
+191,HRV,HR,Croatia,Croatia,Châu Âu,Nam Âu,Thu nhập cao,0,1,EVFTA
+196,CYP,CY,Cyprus,Síp,Châu Âu,Nam Âu,Thu nhập cao,0,1,EVFTA
+203,CZE,CZ,Czechia,Séc,Châu Âu,Đông Âu,Thu nhập cao,0,1,EVFTA
+208,DNK,DK,Denmark,Đan Mạch,Châu Âu,Bắc Âu,Thu nhập cao,0,1,EVFTA
+214,DOM,DO,Dominican Rep.,Cộng hòa Dominica,Châu Mỹ,Vùng Caribbean,Thu nhập trung bình cao,0,0,
+218,ECU,EC,Ecuador,Ecuador,Châu Mỹ,Nam Mỹ,Thu nhập trung bình cao,0,0,
+233,EST,EE,Estonia,Estonia,Châu Âu,Bắc Âu,Thu nhập cao,0,1,EVFTA
+246,FIN,FI,Finland,Phần Lan,Châu Âu,Bắc Âu,Thu nhập cao,0,1,EVFTA
+251,FRA,FR,France,Pháp,Châu Âu,Tây Âu,Thu nhập cao,0,1,EVFTA
+276,DEU,DE,Germany,Đức,Châu Âu,Tây Âu,Thu nhập cao,0,1,EVFTA
+288,GHA,GH,Ghana,Ghana,Châu Phi,Tây Phi,Thu nhập trung bình thấp,0,0,
+300,GRC,GR,Greece,Hy Lạp,Châu Âu,Nam Âu,Thu nhập cao,0,1,EVFTA
+344,HKG,HK,"China, Hong Kong SAR",Hồng Kông (TQ),Châu Á,Đông Á,Thu nhập cao,0,1,AHKFTA
+348,HUN,HU,Hungary,Hungary,Châu Âu,Đông Âu,Thu nhập cao,0,1,EVFTA
+352,ISL,IS,Iceland,Iceland,Châu Âu,Bắc Âu,Thu nhập cao,0,0,
+360,IDN,ID,Indonesia,Indonesia,Châu Á,Đông Nam Á,Thu nhập trung bình cao,0,1,"ASEAN, RCEP"
+368,IRQ,IQ,Iraq,Iraq,Châu Á,Tây Á,Thu nhập trung bình cao,0,0,
+372,IRL,IE,Ireland,Ireland,Châu Âu,Tây Âu,Thu nhập cao,0,1,EVFTA
+376,ISR,IL,Israel,Israel,Châu Á,Tây Á,Thu nhập cao,0,1,VIFTA
+380,ITA,IT,Italy,Ý,Châu Âu,Nam Âu,Thu nhập cao,0,1,EVFTA
+384,CIV,CI,Cote d'Ivoire,Bờ Biển Ngà,Châu Phi,Tây Phi,Thu nhập trung bình thấp,0,0,
+392,JPN,JP,Japan,Nhật Bản,Châu Á,Đông Á,Thu nhập cao,0,1,"VJFTA, CPTPP, RCEP, AJCEP"
+398,KAZ,KZ,Kazakhstan,Kazakhstan,Châu Á,Trung Á,Thu nhập trung bình cao,0,1,VN-EAEU
+404,KEN,KE,Kenya,Kenya,Châu Phi,Đông Phi,Thu nhập trung bình thấp,0,0,
+410,KOR,KR,Rep. of Korea,Hàn Quốc,Châu Á,Đông Á,Thu nhập cao,0,1,"VKFTA, RCEP, AKFTA"
+414,KWT,KW,Kuwait,Kuwait,Châu Á,Tây Á,Thu nhập cao,0,0,
+418,LAO,LA,Lao People's Dem. Rep.,Lào,Châu Á,Đông Nam Á,Thu nhập trung bình thấp,0,1,"ASEAN, RCEP"
+428,LVA,LV,Latvia,Latvia,Châu Âu,Bắc Âu,Thu nhập cao,0,1,EVFTA
+440,LTU,LT,Lithuania,Litva,Châu Âu,Bắc Âu,Thu nhập cao,0,1,EVFTA
+442,LUX,LU,Luxembourg,Luxembourg,Châu Âu,Tây Âu,Thu nhập cao,0,1,EVFTA
+458,MYS,MY,Malaysia,Malaysia,Châu Á,Đông Nam Á,Thu nhập trung bình cao,0,1,"ASEAN, CPTPP, RCEP"
+470,MLT,MT,Malta,Malta,Châu Âu,Nam Âu,Thu nhập cao,0,1,EVFTA
+484,MEX,MX,Mexico,Mexico,Châu Mỹ,Bắc Mỹ,Thu nhập trung bình cao,0,1,CPTPP
+490,TWN,TW,"Other Asia, nes",Đài Loan,Châu Á,Đông Á,Thu nhập cao,0,0,
+504,MAR,MA,Morocco,Morocco,Châu Phi,Bắc Phi,Thu nhập trung bình thấp,0,0,
+508,MOZ,MZ,Mozambique,Mozambique,Châu Phi,Đông Phi,Thu nhập thấp,0,0,
+528,NLD,NL,Netherlands,Hà Lan,Châu Âu,Tây Âu,Thu nhập cao,0,1,EVFTA
+554,NZL,NZ,New Zealand,New Zealand,Châu Đại Dương,Úc và New Zealand,Thu nhập cao,0,1,"CPTPP, RCEP, AANZFTA"
+566,NGA,NG,Nigeria,Nigeria,Châu Phi,Tây Phi,Thu nhập trung bình thấp,0,0,
+579,NOR,NO,Norway,Na Uy,Châu Âu,Bắc Âu,Thu nhập cao,0,0,
+586,PAK,PK,Pakistan,Pakistan,Châu Á,Nam Á,Thu nhập trung bình thấp,0,0,
+591,PAN,PA,Panama,Panama,Châu Mỹ,Trung Mỹ,Thu nhập cao,0,0,
+600,PRY,PY,Paraguay,Paraguay,Châu Mỹ,Nam Mỹ,Thu nhập trung bình cao,0,0,
+604,PER,PE,Peru,Peru,Châu Mỹ,Nam Mỹ,Thu nhập trung bình cao,0,1,CPTPP
+608,PHL,PH,Philippines,Philippines,Châu Á,Đông Nam Á,Thu nhập trung bình thấp,0,1,"ASEAN, RCEP"
+616,POL,PL,Poland,Ba Lan,Châu Âu,Đông Âu,Thu nhập cao,0,1,EVFTA
+620,PRT,PT,Portugal,Bồ Đào Nha,Châu Âu,Nam Âu,Thu nhập cao,0,1,EVFTA
+634,QAT,QA,Qatar,Qatar,Châu Á,Tây Á,Thu nhập cao,0,0,
+642,ROU,RO,Romania,Romania,Châu Âu,Đông Âu,Thu nhập cao,0,1,EVFTA
+643,RUS,RU,Russian Federation,Nga,Châu Âu,Đông Âu,Thu nhập cao,0,1,VN-EAEU
+682,SAU,SA,Saudi Arabia,Ả Rập Xê Út,Châu Á,Tây Á,Thu nhập cao,0,0,
+686,SEN,SN,Senegal,Senegal,Châu Phi,Tây Phi,Thu nhập trung bình thấp,0,0,
+699,IND,IN,India,Ấn Độ,Châu Á,Nam Á,Thu nhập trung bình thấp,0,1,AIFTA
+702,SGP,SG,Singapore,Singapore,Châu Á,Đông Nam Á,Thu nhập cao,0,1,"ASEAN, CPTPP, RCEP"
+703,SVK,SK,Slovakia,Slovakia,Châu Âu,Đông Âu,Thu nhập cao,0,1,EVFTA
+704,VNM,VN,Viet Nam,Việt Nam,Châu Á,Đông Nam Á,Thu nhập trung bình thấp,0,0,Quốc gia báo cáo
+705,SVN,SI,Slovenia,Slovenia,Châu Âu,Nam Âu,Thu nhập cao,0,1,EVFTA
+710,ZAF,ZA,South Africa,Nam Phi,Châu Phi,Nam Phi,Thu nhập trung bình cao,0,0,
+724,ESP,ES,Spain,Tây Ban Nha,Châu Âu,Nam Âu,Thu nhập cao,0,1,EVFTA
+752,SWE,SE,Sweden,Thụy Điển,Châu Âu,Bắc Âu,Thu nhập cao,0,1,EVFTA
+757,CHE,CH,Switzerland,Thụy Sĩ,Châu Âu,Tây Âu,Thu nhập cao,0,0,
+764,THA,TH,Thailand,Thái Lan,Châu Á,Đông Nam Á,Thu nhập trung bình cao,0,1,"ASEAN, RCEP"
+768,TGO,TG,Togo,Togo,Châu Phi,Tây Phi,Thu nhập thấp,0,0,
+784,ARE,AE,United Arab Emirates,UAE (Các TVQ Ả Rập),Châu Á,Tây Á,Thu nhập cao,0,1,CEPA
+788,TUN,TN,Tunisia,Tunisia,Châu Phi,Bắc Phi,Thu nhập trung bình thấp,0,0,
+792,TUR,TR,Turkiye,Thổ Nhĩ Kỳ,Châu Á,Tây Á,Thu nhập trung bình cao,0,0,
+800,UGA,UG,Uganda,Uganda,Châu Phi,Đông Phi,Thu nhập thấp,0,0,
+804,UKR,UA,Ukraine,Ukraine,Châu Âu,Đông Âu,Thu nhập trung bình thấp,0,0,
+818,EGY,EG,Egypt,Ai Cập,Châu Phi,Bắc Phi,Thu nhập trung bình thấp,0,0,
+826,GBR,GB,United Kingdom,Vương quốc Anh,Châu Âu,Bắc Âu,Thu nhập cao,0,1,"UKVFTA, CPTPP"
+834,TZA,TZ,United Rep. of Tanzania,Tanzania,Châu Phi,Đông Phi,Thu nhập trung bình thấp,0,0,
+842,USA,US,USA,Hoa Kỳ,Châu Mỹ,Bắc Mỹ,Thu nhập cao,0,0,Thị trường xuất khẩu số 1
+858,URY,UY,Uruguay,Uruguay,Châu Mỹ,Nam Mỹ,Thu nhập cao,0,0,
+860,UZB,UZ,Uzbekistan,Uzbekistan,Châu Á,Trung Á,Thu nhập trung bình thấp,0,0,
+862,VEN,VE,Venezuela,Venezuela,Châu Mỹ,Nam Mỹ,Thu nhập trung bình cao,0,0,

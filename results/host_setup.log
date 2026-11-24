@@ -1,0 +1,113 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261119153147
+Username: DESKTOP-Q1L03QJ\PC
+RunAs User: DESKTOP-Q1L03QJ\PC
+Configuration Name: 
+Machine: DESKTOP-Q1L03QJ (Microsoft Windows NT 10.0.26340.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File d:\Tiểu luận chuyên ngành\TLCN_DW_XNK\scripts\setup_windows_host.ps1 -TargetUser PC
+Process ID: 6300
+PSVersion: 5.1.26100.10013
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.10013
+BuildVersion: 10.0.26100.10013
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+=== [1/4] Stopping legacy SQL/SSAS services & setting StartupType = Manual ===
+Stopping MSSQL$SQLEXPRESS1 ...
+  -> MSSQL$SQLEXPRESS1: Status=Stopped, StartType=Manual
+Stopping MSOLAP$MSSQLSERVER1 ...
+  -> MSOLAP$MSSQLSERVER1: Status=Stopped, StartType=Manual
+  -> MSSQLLaunchpad$SQLEXPRESS1: Status=Stopped, StartType=Manual
+Stopping SQLBrowser ...
+  -> SQLBrowser: Status=Stopped, StartType=Manual
+Stopping SQLTELEMETRY$SQLEXPRESS1 ...
+  -> SQLTELEMETRY$SQLEXPRESS1: Status=Stopped, StartType=Manual
+Stopping SQLWriter ...
+  -> SQLWriter: Status=Stopped, StartType=Manual
+=== [2/4] Ensuring D:\DockerData exists ===
+=== [3/4] Installing Docker Desktop (WSL2 backend, data root D:\DockerData) ===
+Found Docker Desktop [Docker.DockerDesktop] Version 4.99.0
+This application is licensed to you by its owner.
+Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+Downloading https://desktop.docker.com/win/main/amd64/245822/Docker%20Desktop%20Installer.exe
+  ██████████████████████████████   595 MB /  595 MB
+Successfully verified installer hash
+Starting package install...
+   | -------------------------------------------------------------------------------->8
+Version: 4.99.0 (245822)
+Sha1:
+Started on: 2026/11/19 08:33:16.692
+Resources: C:\Users\PC\AppData\Local\Temp\DockerDesktopInstallers\1795077191349350700\resources
+OS: Windows 10 Home Single Language
+Edition: CoreSingleLanguage
+Id: 2009
+Build: 26340
+BuildLabName: 26100.6.amd64fre.ge_release_flt.260716-1700
+File: C:\ProgramData\DockerDesktop\install-log-admin.txt
+CommandLine: "C:\Users\PC\AppData\Local\Temp\DockerDesktopInstallers\1795077191349350700\Docker Desktop Installer.exe" install -package C:\Users\PC\AppData\Local\Temp\DockerDesktopInstaller
+s\1795077191349350700\DockerDesktop.d4w --accept-license --backend=wsl-2 --wsl-default-data-root=D:\DockerData -vm-package C:\Users\PC\AppData\Local\Temp\DockerDesktopInstallers\17950771913
+49350700\DockerDesktopVM.d4w
+You can send feedback, including this log file, at https://dockr.ly/desktop-feedback
+[2026-11-19T08:33:16.839089900Z][Installer][I] No installation found
+   -[2026-11-19T08:33:17.166055800Z][AdminInstallHandler][I] Running admin installation
+ [2026-11-19T08:33:17.417803100Z][InstallWorkflow][I] Granting ReadAndExecute on C:\ProgramData\DockerDesktop
+   \ [2026-11-19T08:33:17.451318700Z][InstallWorkflow][I] Using package: C:\Users\PC\AppData\Local\Temp\DockerDesktopInstallers\1795077191349350700\DockerDesktop.d4w
+[2026-11-19T08:33:17.562584700Z][InstallWorkflow][I] Phase 0: Pre-check
+   | [2026-11-19T08:33:19.817497300Z][InstallWorkflow][I] Checking prerequisites
+   - [2026-11-19T08:33:21.261968600Z][InstallWorkflow][I] Selected backend mode: wsl-2
+[2026-11-19T08:33:21.302306900Z][InstallWorkflow][I] Phase 1: Staging
+[2026-11-19T08:33:21.313092000Z][DeployArtifacts][I] Unpacking C:\Users\PC\AppData\Local\Temp\DockerDesktopInstallers\1795077191349350700\DockerDesktop.d4w to C:\Program Files\Docker\Docker
+.staging
+[2026-11-19T08:33:21.324909500Z][DeployArtifacts][I] Unpacking with C:\Users\PC\AppData\Local\Temp\DockerDesktopInstallers\1795077191349350700\7zr.exe
+   / [2026-11-19T08:33:33.354682200Z][DeployArtifacts][I] Unpacking C:\Users\PC\AppData\Local\Temp\DockerDesktopInstallers\1795077191349350700\DockerDesktopVM.d4w to C:\Program Files\Docker
+\Docker.staging
+[2026-11-19T08:33:33.354682200Z][DeployArtifacts][I] Unpacking with C:\Users\PC\AppData\Local\Temp\DockerDesktopInstallers\1795077191349350700\7zr.exe
+   | [2026-11-19T08:33:42.340235400Z][InstallWorkflow][I] Verifying payload signatures
+   | [2026-11-19T08:33:43.412054200Z][InstallWorkflow][I] Phase 3: Activation (file-by-file move)
+   / [2026-11-19T08:33:43.695829600Z][InstallWorkflow][I] Moved 169 file(s) from 'C:\Program Files\Docker\Docker.staging' to 'C:\Program Files\Docker\Docker'
+[2026-11-19T08:33:43.715425200Z][InstallWorkflow][I] Phase 4: Components
+   - [2026-11-19T08:33:43.719034700Z][InstallWorkflow][I] Saving C:\ProgramData\DockerDesktop\install-settings.json
+[2026-11-19T08:33:43.719034700Z][InstallWorkflow][I] Deploying component Docker.Installer.CreateGroupAction
+[2026-11-19T08:33:43.842478700Z][InstallWorkflow][I] Deploying component Docker.Installer.AddToGroupAction
+[2026-11-19T08:33:43.858266100Z][InstallWorkflow][I] Deploying component Docker.Installer.EnableFeaturesAction
+[2026-11-19T08:33:43.858266100Z][InstallWorkflow-EnableFeaturesAction][I] Required features: VirtualMachinePlatform, Microsoft-Windows-Subsystem-Linux
+   | [2026-11-19T08:33:45.350491100Z][InstallWorkflow-EnableFeaturesAction][I] All features are already installed.
+[2026-11-19T08:33:45.350491100Z][InstallWorkflow][I] Deploying component Docker.Installer.ServiceAction
+[2026-11-19T08:33:45.350491100Z][InstallWorkflow-ServiceAction][I] Removing service
+[2026-11-19T08:33:45.350491100Z][InstallWorkflow-ServiceAction][I] Creating service
+[2026-11-19T08:33:45.367396200Z][InstallWorkflow][I] Deploying component Docker.Installer.ShortcutAction
+[2026-11-19T08:33:45.400407200Z][InstallWorkflow-ShortcutAction][I] Creating shortcut: C:\ProgramData\Microsoft\Windows\Start Menu\Docker Desktop.lnk/Docker Desktop
+[2026-11-19T08:33:45.418692900Z][InstallWorkflow][I] Deploying component Docker.Installer.ShortcutAction
+[2026-11-19T08:33:45.426716200Z][InstallWorkflow-ShortcutAction][I] Creating shortcut: C:\Users\PC\Desktop\Docker Desktop.lnk/Docker Desktop
+[2026-11-19T08:33:45.430730200Z][InstallWorkflow][I] Deploying component Docker.Installer.AutoStartAction
+[2026-11-19T08:33:45.432569800Z][InstallWorkflow][I] Deploying component Docker.Installer.PathAction
+   / [2026-11-19T08:33:45.604878800Z][InstallWorkflow][I] Deploying component Docker.Installer.ExecAction
+[2026-11-19T08:33:45.607301900Z][InstallWorkflow-ExecAction][I] Running: C:\Program Files\Docker\Docker\InstallerCli.exe -i with timeout=-1
+   | [2026-11-19T08:33:46.324597900Z][InstallWorkflow][I] Registering new product
+[2026-11-19T08:33:46.328079600Z][RegisterProductStep][I] Registering product information
+[2026-11-19T08:33:46.355207900Z][RegisterProductStep][I] Registering docker-desktop url-protocol
+[2026-11-19T08:33:46.358648900Z][InstallWorkflow][I] Phase 5: Validation
+[2026-11-19T08:33:46.360313500Z][InstallWorkflow][I] Phase 6: Cleanup
+[2026-11-19T08:33:46.361512600Z][InstallWorkflow][I] Installation succeeded
+Successfully installed
+Docker Desktop winget exit code: 0
+Ensured 'PC' is in 'docker-users' group.
+=== [4/4] Installing DBeaver Community ===
+Found DBeaver [DBeaver.DBeaver.Community] Version 26.2.5
+This application is licensed to you by its owner.
+Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+Downloading https://github.com/dbeaver/dbeaver/releases/download/26.2.5/dbeaver-ce-26.2.5-windows-x86_64.exe
+  ██████████████████████████████   109 MB /  109 MB
+Successfully verified installer hash
+Starting package install...
+Successfully installed
+DBeaver winget exit code: 0
+=== Host setup script finished ===
+**********************
+Windows PowerShell transcript end
+End time: 20261119154110
+**********************

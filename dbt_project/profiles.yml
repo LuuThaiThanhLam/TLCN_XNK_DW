@@ -1,0 +1,12 @@
+tlcn_dw_xnk:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: "{{ env_var('POSTGRES_HOST', 'localhost') }}"
+      port: "{{ env_var('POSTGRES_PORT', '5432') | int }}"
+      user: "{{ env_var('POSTGRES_USER', 'dwh_admin') }}"
+      password: "{{ env_var('POSTGRES_PASSWORD', 'dwh_secret_change_me') }}"
+      dbname: "{{ env_var('POSTGRES_DB', 'tlcn_dwh') }}"
+      schema: staging
+      threads: 4

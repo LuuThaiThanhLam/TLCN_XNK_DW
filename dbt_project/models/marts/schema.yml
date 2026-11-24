@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: mart_trade_reconciliation
+    description: "Bảng đối chiếu dữ liệu gương song phương kèm hệ số quy đổi CIF/FOB và cờ nguồn dữ liệu (phục vụ phục hồi 2024)."
+    columns:
+      - name: discrepancy_level
+        tests: [not_null]
+      - name: data_source_flag
+        tests: [not_null]
+
+  - name: mart_trade_summary_yearly
+    description: "Bảng tổng hợp kim ngạch hàng năm theo Đối tác x Hàng hóa x Luồng (lọc perspective_key = 1, loại World theo Luật R3)."
+
+  - name: mart_trade_balance
+    description: "Bảng tổng hợp cán cân xuất nhập khẩu song phương theo năm trong phạm vi rổ 14 mã HS6 khảo sát (loại World)."
+
+  - name: mart_market_concentration
+    description: "Bảng chỉ số tập trung thị trường HHI và thị phần Top 4 (CR-4) hàng năm theo luồng thương mại."
+
+  - name: mart_seasonality_monthly
+    description: "Bảng chỉ số mùa vụ 12 tháng (Seasonal Index) lọc chuẩn độ mịn MONTH (Luật R5)."
+
+  - name: mart_tariff_weighted
+    description: "Bảng thuế suất bình quân gia quyền theo total_lines (Luật R2 cho độ đo Non-additive)."
+
+  - name: mart_trade_macro_yearly
+    description: "Bảng tổng hợp liên Fact (Kimball Cross-Fact Drill-Across) kết hợp kim ngạch XNK với các chỉ số kinh tế vĩ mô của đối tác chiến lược theo năm."
+    columns:
+      - name: calendar_year
+        tests: [not_null]
+      - name: partner_key
+        tests: [not_null]
+      - name: total_trade_usd
+        tests: [not_null]
+      - name: gdp_usd
+        tests: [not_null]

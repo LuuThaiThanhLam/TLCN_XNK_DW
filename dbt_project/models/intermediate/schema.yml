@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: int_trade_unified
+    description: "Hợp nhất dòng dữ liệu VN_REPORTED và PARTNER_MIRROR trước khi ánh xạ surrogate keys, bảo toàn tách bạch góc nhìn theo Luật R4."
+    columns:
+      - name: perspective_code
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['VN_REPORTED', 'PARTNER_MIRROR']
+
+  - name: int_trade_reconciliation
+    description: "Tầng đối chiếu đa góc nhìn (FULL OUTER JOIN giữa VN_REPORTED và PARTNER_MIRROR đảo chiều) kèm quy đổi CIF->FOB và cờ chất lượng."
+    columns:
+      - name: discrepancy_level
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['MISSING_VN_REPORTED', 'MISSING_MIRROR', 'LOW', 'MODERATE', 'HIGH']
+      - name: data_source_flag
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['BOTH_AVAILABLE', 'VN_OFFICIAL_ONLY', 'MIRROR_ESTIMATED', 'NO_DATA']

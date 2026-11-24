@@ -1,0 +1,14 @@
+commodity_group,transport_route,factor_pct,source_reference
+Nhóm 1 · Điện tử – viễn thông,INTRA_ASIA,2.50,OECD Trade Facilitation 2020
+Nhóm 1 · Điện tử – viễn thông,TRANS_PACIFIC,4.00,IMF DOTS methodology
+Nhóm 1 · Điện tử – viễn thông,ASIA_EUROPE,3.50,IMF DOTS methodology
+Nhóm 2 · Dệt may – giày dép,INTRA_ASIA,4.00,OECD Trade Facilitation 2020
+Nhóm 2 · Dệt may – giày dép,TRANS_PACIFIC,8.00,IMF DOTS methodology
+Nhóm 2 · Dệt may – giày dép,ASIA_EUROPE,7.00,IMF DOTS methodology
+Nhóm 3 · Nông sản – thực phẩm,INTRA_ASIA,5.00,OECD Trade Facilitation 2020
+Nhóm 3 · Nông sản – thực phẩm,TRANS_PACIFIC,12.00,IMF DOTS methodology
+Nhóm 3 · Nông sản – thực phẩm,ASIA_EUROPE,10.00,IMF DOTS methodology
+Nhóm 4 · Nhựa – công nghiệp nặng,INTRA_ASIA,8.00,OECD Trade Facilitation 2020
+Nhóm 4 · Nhựa – công nghiệp nặng,TRANS_PACIFIC,18.00,IMF DOTS methodology
+Nhóm 4 · Nhựa – công nghiệp nặng,ASIA_EUROPE,15.00,IMF DOTS methodology
+Mặc định,UNKNOWN,6.00,IMF global average estimate

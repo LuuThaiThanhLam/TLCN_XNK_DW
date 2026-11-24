@@ -1,0 +1,71 @@
+name: "tlcn_dw_xnk"
+version: "1.0.0"
+config-version: 2
+
+profile: "tlcn_dw_xnk"
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+seeds:
+  tlcn_dw_xnk:
+    +schema: staging
+    ref_country_codes:
+      +column_types:
+        code_comtrade: varchar(10)
+        iso3: varchar(3)
+        iso2: varchar(2)
+        country_name_en: varchar(200)
+        country_name_vi: varchar(200)
+        region: varchar(100)
+        sub_region: varchar(100)
+        income_group: varchar(60)
+        is_aggregate: integer
+        has_fta_with_vn: integer
+        fta_name: varchar(200)
+    ref_cif_fob_factor:
+      +column_types:
+        commodity_group: varchar(80)
+        transport_route: varchar(50)
+        factor_pct: numeric(5,2)
+        source_reference: varchar(200)
+    ref_hs_bridge:
+      +column_types:
+        hs6_source: varchar(6)
+        hs6_target: varchar(6)
+        from_revision: varchar(20)
+        to_revision: varchar(20)
+        note: varchar(300)
+    dw_usage_rule:
+      +column_types:
+        rule_id: varchar(4)
+        applies_to: varchar(120)
+        rule_vi: varchar(500)
+        enforcement: varchar(400)
+
+snapshots:
+  tlcn_dw_xnk:
+    +target_schema: snapshots
+
+models:
+  tlcn_dw_xnk:
+    staging:
+      +schema: staging
+      +materialized: view
+    intermediate:
+      +schema: intermediate
+      +materialized: view
+    core_dwh:
+      +schema: core_dwh
+      +materialized: table
+    marts:
+      +schema: mart
+      +materialized: table

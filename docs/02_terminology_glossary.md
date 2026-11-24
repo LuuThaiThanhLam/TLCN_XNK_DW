@@ -1,0 +1,14 @@
+# Bảng chuẩn hóa thuật ngữ chuyên ngành (Terminology Glossary)
+
+Tài liệu này quy định cách sử dụng thuật ngữ chuẩn xác trong toàn bộ mã nguồn, mô hình dữ liệu và báo cáo của đồ án `TLCN_DW_XNK`, khắc phục dứt điểm các sai sót thuật ngữ thường gặp.
+
+| Khái niệm | Thuật ngữ CHUẨN (Bắt buộc dùng) | Cách viết SAI / Mơ hồ (Tuyệt đối tránh) | Giải thích kỹ thuật |
+|---|---|---|---|
+| Mô hình 3 bảng Fact dùng chung các bảng Dimension | **Fact Constellation Schema** (hoặc **Galaxy Schema**) | Gọi lẫn lộn lúc Star Schema, lúc Constellation | Một Star Schema chỉ có 1 bảng Fact trung tâm; khi 3 Fact (`fact_trade`, `fact_tariff_rate`, `fact_macro_indicator`) chia sẻ Conformed Dimensions thì cấu trúc tổng thể là **Fact Constellation / Galaxy Schema**. |
+| Phân vùng hướng chủ đề vs Bảng tổng hợp | Phân biệt rõ **Data Mart** (tầng/schema phục vụ theo chủ đề) với **Summary Table / Aggregate Table** và **Materialized View** | Gọi 1 bảng phẳng 18 dòng (`MART_HHI_YEARLY`) là "Data Mart vật lý" | Data Mart là tập con hướng chủ đề của Data Warehouse; một bảng đơn lẻ đã tính tổng sẵn gọi chính xác là **Summary Table** (do dbt tạo) hoặc **Materialized View** (đối tượng CSDL hỗ trợ `REFRESH CONCURRENTLY`). |
+| Tính chất cộng gộp của Thuế suất (`ad_valorem_pct`) | **Non-additive (Phi cộng gộp)** | *Semi-additive* | Độ đo **Semi-additive** cộng được qua các chiều khác và chỉ không cộng qua chiều Thời gian (ví dụ: số dư tài khoản, tồn kho). Thuế suất (%) không cộng được theo **bất kỳ** chiều nào nên là **Non-additive**, tổng hợp bằng bình quân gia quyền theo `total_lines`. |
+| Loại thuế ưu đãi trong WITS TRAINS | **Effectively Applied Tariff (AHS)** | *Effectively Handled* | Tên chuẩn quốc tế của World Bank WITS cho mức thuế ưu đãi thực tế áp dụng song phương là *Effectively Applied (AHS)*. |
+| Hàm cửa sổ `LEAD() OVER` / `LAG() OVER` trong SQL OLAP | **So sánh dịch kỳ (Next-Period Comparison / Lead-Lag Analysis)** | *Dự báo xu hướng kỳ tiếp theo (Forecasting)* | `LEAD()` / `LAG()` chỉ đọc giá trị của dòng kế tiếp hoặc kỳ trước đã có sẵn trong dữ liệu lịch sử để so sánh biến động, không phải mô hình dự báo tương lai. |
+| Kỹ thuật khóa `YYYY00` trong `dim_date` | **Giải pháp đa độ mịn dùng khóa mốc năm (Year Sentinel Key)** | Gọi là "chuẩn mặc định của công cụ OLAP" | `YYYY00` là kỹ thuật thiết kế RDBMS để giữ toàn vẹn khóa ngoại cho Fact độ mịn năm khi dùng chung bảng `dim_date` độ mịn tháng; cần có rule lọc `granularity` đi kèm. |
+| Phạm vi cán cân thương mại song phương | **Cán cân thương mại trong phạm vi rổ 14 mã HS6 khảo sát** | Kết luận Việt Nam thặng dư chung với Trung Quốc | Toàn bộ nền kinh tế Việt Nam nhập siêu lớn từ Trung Quốc; con số thặng dư (+30,35 tỷ USD) chỉ đúng trong rổ 14 mã HS6 trọng điểm được chọn lọc trong tập dữ liệu mẫu. |
+| Loại hình học phần | **Tiểu luận chuyên ngành** | *Khóa luận* / *Khóa luận tốt nghiệp* | Học phần hiện tại là Tiểu luận chuyên ngành Hệ thống Thông tin (5 tín chỉ). |

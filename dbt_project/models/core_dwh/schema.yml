@@ -1,0 +1,169 @@
+version: 2
+
+models:
+  - name: dim_date
+    description: "Chiều thời gian hỗ trợ phân cấp Năm -> Quý -> Tháng và khóa Year Sentinel (YYYY00) cho dữ liệu độ mịn năm."
+    columns:
+      - name: date_key
+        tests: [unique, not_null]
+      - name: granularity
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['MONTH', 'YEAR']
+
+  - name: dim_partner
+    description: "Chiều đối tác thương mại (98 thực thể gồm 97 đối tác + Việt Nam + World), kế thừa lịch sử SCD Type 2 từ snap_dim_partner."
+    columns:
+      - name: partner_key
+        tests: [unique, not_null]
+      - name: code_comtrade
+        tests: [unique, not_null]
+
+  - name: dim_commodity
+    description: "Chiều hàng hóa 14 phân nhóm HS6 trọng điểm chuẩn hóa về HS2022, kế thừa lịch sử SCD Type 2 từ snap_dim_commodity."
+    columns:
+      - name: commodity_key
+        tests: [unique, not_null]
+      - name: hs6
+        tests: [unique, not_null]
+
+  - name: dim_flow
+    description: "Chiều luồng thương mại (X: Xuất khẩu, M: Nhập khẩu)."
+    columns:
+      - name: flow_key
+        tests: [unique, not_null]
+
+  - name: dim_perspective
+    description: "Chiều góc nhìn báo cáo (1: VN_REPORTED, 2: PARTNER_MIRROR) ngăn chặn cộng trùng."
+    columns:
+      - name: perspective_key
+        tests: [unique, not_null]
+
+  - name: dim_tariff_type
+    description: "Chiều loại thuế quan (MFN vs Effectively Applied AHS)."
+    columns:
+      - name: tariff_type_key
+        tests: [unique, not_null]
+
+  - name: dim_indicator
+    description: "Chiều chỉ số kinh tế vĩ mô World Bank WDI."
+    columns:
+      - name: indicator_key
+        tests: [unique, not_null]
+
+  - name: dim_audit
+    description: "Chiều kiểm toán dòng dữ liệu (Data Lineage) theo từng batch trích xuất."
+    columns:
+      - name: audit_key
+        tests: [unique, not_null]
+      - name: batch_id
+        tests: [unique, not_null]
+
+  - name: fact_trade
+    description: "Bảng Fact giao dịch thương mại hàng tháng (Grain: Tháng x Đối tác x HS6 x Luồng x Góc nhìn)."
+    columns:
+      - name: trade_key
+        tests: [unique, not_null]
+      - name: date_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_date')
+              field: date_key
+      - name: partner_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_partner')
+              field: partner_key
+      - name: commodity_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_commodity')
+              field: commodity_key
+      - name: flow_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_flow')
+              field: flow_key
+      - name: perspective_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_perspective')
+              field: perspective_key
+      - name: audit_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_audit')
+              field: audit_key
+
+  - name: fact_tariff_rate
+    description: "Bảng Fact thuế suất hàng năm (Grain: Năm YYYY00 x Đối tác x HS6 x Loại thuế x Combo), ad_valorem_pct là độ đo phi cộng gộp (Non-additive)."
+    columns:
+      - name: tariff_key
+        tests: [unique, not_null]
+      - name: date_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_date')
+              field: date_key
+      - name: partner_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_partner')
+              field: partner_key
+      - name: commodity_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_commodity')
+              field: commodity_key
+      - name: tariff_type_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_tariff_type')
+              field: tariff_type_key
+      - name: audit_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_audit')
+              field: audit_key
+
+  - name: fact_macro_indicator
+    description: "Bảng Fact chỉ số kinh tế vĩ mô hàng năm (Grain: Năm YYYY00 x Quốc gia x Chỉ số)."
+    columns:
+      - name: macro_key
+        tests: [unique, not_null]
+      - name: date_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_date')
+              field: date_key
+      - name: partner_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_partner')
+              field: partner_key
+      - name: indicator_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_indicator')
+              field: indicator_key
+      - name: audit_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_audit')
+              field: audit_key

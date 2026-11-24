@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: raw
+    database: "{{ env_var('POSTGRES_DB', 'tlcn_dwh') }}"
+    schema: raw
+    description: "Tầng Landing Zone trong PostgreSQL chứa dữ liệu thô nạp từ MinIO thông qua COPY FROM STDIN."
+    tables:
+      - name: vn_reported
+        description: "Dữ liệu thương mại hàng tháng do Việt Nam báo cáo (UN Comtrade, 14 mã HS6, 97 đối tác, 2015–2023)."
+      - name: partner_mirror
+        description: "Dữ liệu gương hàng tháng do 5 đối tác chiến lược báo cáo về Việt Nam (2015–2024)."
+      - name: wits_tariff
+        description: "Biểu thuế quan MFN và Effectively Applied (AHS/PREF) trích từ WITS/UNCTAD TRAINS SDMX."
+      - name: wb_macro
+        description: "Chỉ số kinh tế vĩ mô (GDP, GDP/người, CPI, Tỷ giá, Độ mở thương mại) từ World Bank WDI v2."

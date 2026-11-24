@@ -1,0 +1,301 @@
+﻿country_iso3,country_name,indicator,indicator_name,year,value,source_system,extracted_at
+CHN,China,NY.GDP.MKTP.CD,GDP (current US$),2024,1.87297E+13,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+CHN,China,NY.GDP.MKTP.CD,GDP (current US$),2023,1.82704E+13,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+CHN,China,NY.GDP.MKTP.CD,GDP (current US$),2022,1.83168E+13,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+CHN,China,NY.GDP.MKTP.CD,GDP (current US$),2021,1.82017E+13,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+CHN,China,NY.GDP.MKTP.CD,GDP (current US$),2020,1.49964E+13,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+CHN,China,NY.GDP.MKTP.CD,GDP (current US$),2019,1.45602E+13,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+CHN,China,NY.GDP.MKTP.CD,GDP (current US$),2018,1.41478E+13,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+CHN,China,NY.GDP.MKTP.CD,GDP (current US$),2017,1.25376E+13,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+CHN,China,NY.GDP.MKTP.CD,GDP (current US$),2016,1.1456E+13,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+CHN,China,NY.GDP.MKTP.CD,GDP (current US$),2015,1.12808E+13,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+DEU,Germany,NY.GDP.MKTP.CD,GDP (current US$),2024,4.68559E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+DEU,Germany,NY.GDP.MKTP.CD,GDP (current US$),2023,4.56221E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+DEU,Germany,NY.GDP.MKTP.CD,GDP (current US$),2022,4.20102E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+DEU,Germany,NY.GDP.MKTP.CD,GDP (current US$),2021,4.35525E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+DEU,Germany,NY.GDP.MKTP.CD,GDP (current US$),2020,3.9414E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+DEU,Germany,NY.GDP.MKTP.CD,GDP (current US$),2019,3.95989E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+DEU,Germany,NY.GDP.MKTP.CD,GDP (current US$),2018,4.05543E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+DEU,Germany,NY.GDP.MKTP.CD,GDP (current US$),2017,3.76535E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+DEU,Germany,NY.GDP.MKTP.CD,GDP (current US$),2016,3.53679E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+DEU,Germany,NY.GDP.MKTP.CD,GDP (current US$),2015,3.4251E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+JPN,Japan,NY.GDP.MKTP.CD,GDP (current US$),2024,4.19001E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+JPN,Japan,NY.GDP.MKTP.CD,GDP (current US$),2023,4.38485E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+JPN,Japan,NY.GDP.MKTP.CD,GDP (current US$),2022,4.44798E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+JPN,Japan,NY.GDP.MKTP.CD,GDP (current US$),2021,5.22593E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+JPN,Japan,NY.GDP.MKTP.CD,GDP (current US$),2020,5.1892E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+JPN,Japan,NY.GDP.MKTP.CD,GDP (current US$),2019,5.24576E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+JPN,Japan,NY.GDP.MKTP.CD,GDP (current US$),2018,5.15429E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+JPN,Japan,NY.GDP.MKTP.CD,GDP (current US$),2017,5.03823E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+JPN,Japan,NY.GDP.MKTP.CD,GDP (current US$),2016,5.11036E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+JPN,Japan,NY.GDP.MKTP.CD,GDP (current US$),2015,4.53444E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+KOR,"Korea, Rep.",NY.GDP.MKTP.CD,GDP (current US$),2024,1.87539E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+KOR,"Korea, Rep.",NY.GDP.MKTP.CD,GDP (current US$),2023,1.8448E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+KOR,"Korea, Rep.",NY.GDP.MKTP.CD,GDP (current US$),2022,1.79936E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+KOR,"Korea, Rep.",NY.GDP.MKTP.CD,GDP (current US$),2021,1.94231E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+KOR,"Korea, Rep.",NY.GDP.MKTP.CD,GDP (current US$),2020,1.74407E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+KOR,"Korea, Rep.",NY.GDP.MKTP.CD,GDP (current US$),2019,1.75105E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+KOR,"Korea, Rep.",NY.GDP.MKTP.CD,GDP (current US$),2018,1.82425E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+KOR,"Korea, Rep.",NY.GDP.MKTP.CD,GDP (current US$),2017,1.7102E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+KOR,"Korea, Rep.",NY.GDP.MKTP.CD,GDP (current US$),2016,1.57915E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+KOR,"Korea, Rep.",NY.GDP.MKTP.CD,GDP (current US$),2015,1.53921E+12,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+USA,United States,NY.GDP.MKTP.CD,GDP (current US$),2024,2.9298E+13,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+USA,United States,NY.GDP.MKTP.CD,GDP (current US$),2023,2.78115E+13,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+USA,United States,NY.GDP.MKTP.CD,GDP (current US$),2022,2.60546E+13,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+USA,United States,NY.GDP.MKTP.CD,GDP (current US$),2021,2.37256E+13,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+USA,United States,NY.GDP.MKTP.CD,GDP (current US$),2020,2.13753E+13,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+USA,United States,NY.GDP.MKTP.CD,GDP (current US$),2019,2.154E+13,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+USA,United States,NY.GDP.MKTP.CD,GDP (current US$),2018,2.06565E+13,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+USA,United States,NY.GDP.MKTP.CD,GDP (current US$),2017,1.96121E+13,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+USA,United States,NY.GDP.MKTP.CD,GDP (current US$),2016,1.88049E+13,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+USA,United States,NY.GDP.MKTP.CD,GDP (current US$),2015,1.8295E+13,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+VNM,Viet Nam,NY.GDP.MKTP.CD,GDP (current US$),2024,4.76325E+11,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+VNM,Viet Nam,NY.GDP.MKTP.CD,GDP (current US$),2023,4.33805E+11,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+VNM,Viet Nam,NY.GDP.MKTP.CD,GDP (current US$),2022,4.13445E+11,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+VNM,Viet Nam,NY.GDP.MKTP.CD,GDP (current US$),2021,3.66475E+11,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+VNM,Viet Nam,NY.GDP.MKTP.CD,GDP (current US$),2020,3.46616E+11,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+VNM,Viet Nam,NY.GDP.MKTP.CD,GDP (current US$),2019,3.34365E+11,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+VNM,Viet Nam,NY.GDP.MKTP.CD,GDP (current US$),2018,3.10106E+11,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+VNM,Viet Nam,NY.GDP.MKTP.CD,GDP (current US$),2017,2.81354E+11,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+VNM,Viet Nam,NY.GDP.MKTP.CD,GDP (current US$),2016,2.57096E+11,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+VNM,Viet Nam,NY.GDP.MKTP.CD,GDP (current US$),2015,2.39258E+11,World Bank WDI API v2,2026-09-22T08:50:16+00:00
+CHN,China,NY.GDP.PCAP.CD,GDP per capita (current US$),2024,13293.11623,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+CHN,China,NY.GDP.PCAP.CD,GDP per capita (current US$),2023,12951.17824,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+CHN,China,NY.GDP.PCAP.CD,GDP per capita (current US$),2022,12970.60564,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+CHN,China,NY.GDP.PCAP.CD,GDP per capita (current US$),2021,12887.43572,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+CHN,China,NY.GDP.PCAP.CD,GDP per capita (current US$),2020,10627.4638,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+CHN,China,NY.GDP.PCAP.CD,GDP per capita (current US$),2019,10342.90095,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+CHN,China,NY.GDP.PCAP.CD,GDP per capita (current US$),2018,10085.66381,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+CHN,China,NY.GDP.PCAP.CD,GDP per capita (current US$),2017,8979.676527,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+CHN,China,NY.GDP.PCAP.CD,GDP per capita (current US$),2016,8254.868593,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+CHN,China,NY.GDP.PCAP.CD,GDP per capita (current US$),2015,8175.332851,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+DEU,Germany,NY.GDP.PCAP.CD,GDP per capita (current US$),2024,56103.73232,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+DEU,Germany,NY.GDP.PCAP.CD,GDP per capita (current US$),2023,54776.76682,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+DEU,Germany,NY.GDP.PCAP.CD,GDP per capita (current US$),2022,50506.51796,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+DEU,Germany,NY.GDP.PCAP.CD,GDP per capita (current US$),2021,52349.246,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+DEU,Germany,NY.GDP.PCAP.CD,GDP per capita (current US$),2020,47394.87345,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+DEU,Germany,NY.GDP.PCAP.CD,GDP per capita (current US$),2019,47656.19974,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+DEU,Germany,NY.GDP.PCAP.CD,GDP per capita (current US$),2018,48916.16866,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+DEU,Germany,NY.GDP.PCAP.CD,GDP per capita (current US$),2017,45553.93415,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+DEU,Germany,NY.GDP.PCAP.CD,GDP per capita (current US$),2016,42948.93819,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+DEU,Germany,NY.GDP.PCAP.CD,GDP per capita (current US$),2015,41929.75491,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+JPN,Japan,NY.GDP.PCAP.CD,GDP per capita (current US$),2024,33797.10143,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+JPN,Japan,NY.GDP.PCAP.CD,GDP per capita (current US$),2023,35215.00354,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+JPN,Japan,NY.GDP.PCAP.CD,GDP per capita (current US$),2022,35548.26452,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+JPN,Japan,NY.GDP.PCAP.CD,GDP per capita (current US$),2021,41580.73904,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+JPN,Japan,NY.GDP.PCAP.CD,GDP per capita (current US$),2020,41098.9739,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+JPN,Japan,NY.GDP.PCAP.CD,GDP per capita (current US$),2019,41424.86556,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+JPN,Japan,NY.GDP.PCAP.CD,GDP per capita (current US$),2018,40645.47809,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+JPN,Japan,NY.GDP.PCAP.CD,GDP per capita (current US$),2017,39679.86353,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+JPN,Japan,NY.GDP.PCAP.CD,GDP per capita (current US$),2016,40214.96886,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+JPN,Japan,NY.GDP.PCAP.CD,GDP per capita (current US$),2015,35664.64461,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+KOR,"Korea, Rep.",NY.GDP.PCAP.CD,GDP per capita (current US$),2024,36238.63991,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+KOR,"Korea, Rep.",NY.GDP.PCAP.CD,GDP per capita (current US$),2023,35674.096,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+KOR,"Korea, Rep.",NY.GDP.PCAP.CD,GDP per capita (current US$),2022,34822.40484,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+KOR,"Korea, Rep.",NY.GDP.PCAP.CD,GDP per capita (current US$),2021,37518.46353,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+KOR,"Korea, Rep.",NY.GDP.PCAP.CD,GDP per capita (current US$),2020,33645.77195,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+KOR,"Korea, Rep.",NY.GDP.PCAP.CD,GDP per capita (current US$),2019,33826.94433,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+KOR,"Korea, Rep.",NY.GDP.PCAP.CD,GDP per capita (current US$),2018,35363.95082,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+KOR,"Korea, Rep.",NY.GDP.PCAP.CD,GDP per capita (current US$),2017,33296.98454,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+KOR,"Korea, Rep.",NY.GDP.PCAP.CD,GDP per capita (current US$),2016,30832.06281,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+KOR,"Korea, Rep.",NY.GDP.PCAP.CD,GDP per capita (current US$),2015,30171.79065,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+USA,United States,NY.GDP.PCAP.CD,GDP per capita (current US$),2024,86169.66416,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+USA,United States,NY.GDP.PCAP.CD,GDP per capita (current US$),2023,82586.78477,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+USA,United States,NY.GDP.PCAP.CD,GDP per capita (current US$),2022,78008.68958,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+USA,United States,NY.GDP.PCAP.CD,GDP per capita (current US$),2021,71441.23198,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+USA,United States,NY.GDP.PCAP.CD,GDP per capita (current US$),2020,64465.29714,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+USA,United States,NY.GDP.PCAP.CD,GDP per capita (current US$),2019,65227.95659,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+USA,United States,NY.GDP.PCAP.CD,GDP per capita (current US$),2018,62875.66614,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+USA,United States,NY.GDP.PCAP.CD,GDP per capita (current US$),2017,60047.71907,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+USA,United States,NY.GDP.PCAP.CD,GDP per capita (current US$),2016,57976.6282,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+USA,United States,NY.GDP.PCAP.CD,GDP per capita (current US$),2015,56849.46979,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+VNM,Viet Nam,NY.GDP.PCAP.CD,GDP per capita (current US$),2024,4716.659938,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+VNM,Viet Nam,NY.GDP.PCAP.CD,GDP per capita (current US$),2023,4322.825723,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+VNM,Viet Nam,NY.GDP.PCAP.CD,GDP per capita (current US$),2022,4147.697772,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+VNM,Viet Nam,NY.GDP.PCAP.CD,GDP per capita (current US$),2021,3704.193559,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+VNM,Viet Nam,NY.GDP.PCAP.CD,GDP per capita (current US$),2020,3534.039535,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+VNM,Viet Nam,NY.GDP.PCAP.CD,GDP per capita (current US$),2019,3440.900254,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+VNM,Viet Nam,NY.GDP.PCAP.CD,GDP per capita (current US$),2018,3222.310031,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+VNM,Viet Nam,NY.GDP.PCAP.CD,GDP per capita (current US$),2017,2956.109921,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+VNM,Viet Nam,NY.GDP.PCAP.CD,GDP per capita (current US$),2016,2735.060438,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+VNM,Viet Nam,NY.GDP.PCAP.CD,GDP per capita (current US$),2015,2577.568853,World Bank WDI API v2,2026-09-22T08:50:31+00:00
+CHN,China,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2024,0.218128938,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+CHN,China,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2023,0.234836829,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+CHN,China,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2022,1.973575557,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+CHN,China,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2021,0.981015136,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+CHN,China,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2020,2.419421895,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+CHN,China,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2019,2.899234164,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+CHN,China,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2018,2.0747904,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+CHN,China,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2017,1.593136001,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+CHN,China,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2016,2.000001822,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+CHN,China,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2015,1.437023809,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+DEU,Germany,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2024,2.256498143,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+DEU,Germany,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2023,5.946436677,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+DEU,Germany,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2022,6.872574386,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+DEU,Germany,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2021,3.066666667,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+DEU,Germany,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2020,0.144877926,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+DEU,Germany,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2019,1.445659769,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+DEU,Germany,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2018,1.732168798,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+DEU,Germany,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2017,1.509494851,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+DEU,Germany,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2016,0.491747008,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+DEU,Germany,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2015,0.514426137,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+JPN,Japan,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2024,2.738536816,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+JPN,Japan,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2023,3.268133659,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+JPN,Japan,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2022,2.497702782,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+JPN,Japan,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2021,-0.233352779,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+JPN,Japan,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2020,-0.024995834,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+JPN,Japan,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2019,0.468776159,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+JPN,Japan,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2018,0.989094598,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+JPN,Japan,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2017,0.484199796,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+JPN,Japan,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2016,-0.127258844,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+JPN,Japan,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2015,0.795279631,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+KOR,"Korea, Rep.",FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2024,2.321743286,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+KOR,"Korea, Rep.",FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2023,3.59745625,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+KOR,"Korea, Rep.",FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2022,5.089513651,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+KOR,"Korea, Rep.",FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2021,2.498333333,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+KOR,"Korea, Rep.",FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2020,0.537288023,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+KOR,"Korea, Rep.",FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2019,0.383000304,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+KOR,"Korea, Rep.",FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2018,1.47583935,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+KOR,"Korea, Rep.",FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2017,1.944332308,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+KOR,"Korea, Rep.",FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2016,0.97168574,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+KOR,"Korea, Rep.",FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2015,0.706331772,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+USA,United States,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2024,2.949525205,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+USA,United States,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2023,4.116338384,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+USA,United States,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2022,8.002799821,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+USA,United States,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2021,4.697858864,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+USA,United States,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2020,1.233584396,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+USA,United States,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2019,1.812210075,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+USA,United States,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2018,2.442583297,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+USA,United States,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2017,2.130110004,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+USA,United States,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2016,1.261583206,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+USA,United States,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2015,0.118627136,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+VNM,Viet Nam,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2024,3.621092739,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+VNM,Viet Nam,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2023,3.252892827,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+VNM,Viet Nam,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2022,3.1565075,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+VNM,Viet Nam,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2021,1.834715548,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+VNM,Viet Nam,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2020,3.220934367,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+VNM,Viet Nam,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2019,2.795823675,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+VNM,Viet Nam,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2018,3.539628059,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+VNM,Viet Nam,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2017,3.520256888,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+VNM,Viet Nam,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2016,2.66824817,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+VNM,Viet Nam,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",2015,0.631200905,World Bank WDI API v2,2026-09-22T08:50:44+00:00
+CHN,China,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2024,7.197491108,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+CHN,China,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2023,7.083998423,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+CHN,China,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2022,6.737158112,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+CHN,China,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2021,6.44897518,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+CHN,China,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2020,6.900767269,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+CHN,China,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2019,6.90838501,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+CHN,China,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2018,6.615957177,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+CHN,China,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2017,6.758755086,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+CHN,China,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2016,6.644477829,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+CHN,China,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2015,6.227488673,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+DEU,Germany,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2024,0.923889546,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+DEU,Germany,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2023,0.924839558,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+DEU,Germany,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2022,0.949623753,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+DEU,Germany,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2021,0.845494139,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+DEU,Germany,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2020,0.875506397,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+DEU,Germany,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2019,0.893276257,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+DEU,Germany,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2018,0.846772667,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+DEU,Germany,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2017,0.885205508,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+DEU,Germany,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2016,0.903421436,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+DEU,Germany,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2015,0.901296423,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+JPN,Japan,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2024,151.3662913,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+JPN,Japan,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2023,140.4911001,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+JPN,Japan,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2022,131.4981404,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+JPN,Japan,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2021,109.7543238,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+JPN,Japan,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2020,106.7745823,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+JPN,Japan,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2019,109.0096659,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+JPN,Japan,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2018,110.4231793,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+JPN,Japan,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2017,112.1661411,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+JPN,Japan,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2016,108.7929,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+JPN,Japan,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2015,121.0440257,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+KOR,"Korea, Rep.",PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2024,1363.375,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+KOR,"Korea, Rep.",PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2023,1305.6625,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+KOR,"Korea, Rep.",PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2022,1291.446667,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+KOR,"Korea, Rep.",PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2021,1143.951667,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+KOR,"Korea, Rep.",PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2020,1180.265833,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+KOR,"Korea, Rep.",PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2019,1165.3575,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+KOR,"Korea, Rep.",PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2018,1100.163333,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+KOR,"Korea, Rep.",PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2017,1131.000833,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+KOR,"Korea, Rep.",PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2016,1160.7675,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+KOR,"Korea, Rep.",PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2015,1130.9525,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+USA,United States,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2024,1,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+USA,United States,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2023,1,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+USA,United States,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2022,1,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+USA,United States,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2021,1,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+USA,United States,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2020,1,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+USA,United States,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2019,1,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+USA,United States,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2018,1,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+USA,United States,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2017,1,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+USA,United States,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2016,1,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+USA,United States,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2015,1,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+VNM,Viet Nam,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2024,24164.88583,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+VNM,Viet Nam,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2023,23787.31917,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+VNM,Viet Nam,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2022,23271.2125,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+VNM,Viet Nam,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2021,23159.78259,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+VNM,Viet Nam,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2020,23208.36833,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+VNM,Viet Nam,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2019,23050.24167,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+VNM,Viet Nam,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2018,22602.05,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+VNM,Viet Nam,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2017,22370.08667,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+VNM,Viet Nam,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2016,21935.00083,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+VNM,Viet Nam,PA.NUS.FCRF,"Official exchange rate (LCU per US$, period average)",2015,21697.5675,World Bank WDI API v2,2026-09-22T08:51:05+00:00
+CHN,China,NE.TRD.GNFS.ZS,Trade (% of GDP),2024,37.95606014,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+CHN,China,NE.TRD.GNFS.ZS,Trade (% of GDP),2023,36.73914969,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+CHN,China,NE.TRD.GNFS.ZS,Trade (% of GDP),2022,37.51255568,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+CHN,China,NE.TRD.GNFS.ZS,Trade (% of GDP),2021,36.64287896,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+CHN,China,NE.TRD.GNFS.ZS,Trade (% of GDP),2020,34.33777847,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+CHN,China,NE.TRD.GNFS.ZS,Trade (% of GDP),2019,35.45443503,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+CHN,China,NE.TRD.GNFS.ZS,Trade (% of GDP),2018,36.89438439,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+CHN,China,NE.TRD.GNFS.ZS,Trade (% of GDP),2017,36.95085262,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+CHN,China,NE.TRD.GNFS.ZS,Trade (% of GDP),2016,36.17717069,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+CHN,China,NE.TRD.GNFS.ZS,Trade (% of GDP),2015,38.69718484,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+DEU,Germany,NE.TRD.GNFS.ZS,Trade (% of GDP),2024,79.09073059,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+DEU,Germany,NE.TRD.GNFS.ZS,Trade (% of GDP),2023,81.96254838,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+DEU,Germany,NE.TRD.GNFS.ZS,Trade (% of GDP),2022,88.78575421,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+DEU,Germany,NE.TRD.GNFS.ZS,Trade (% of GDP),2021,79.91953486,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+DEU,Germany,NE.TRD.GNFS.ZS,Trade (% of GDP),2020,72.93353271,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+DEU,Germany,NE.TRD.GNFS.ZS,Trade (% of GDP),2019,79.07324272,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+DEU,Germany,NE.TRD.GNFS.ZS,Trade (% of GDP),2018,79.12522605,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+DEU,Germany,NE.TRD.GNFS.ZS,Trade (% of GDP),2017,77.45483947,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+DEU,Germany,NE.TRD.GNFS.ZS,Trade (% of GDP),2016,76.00599022,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+DEU,Germany,NE.TRD.GNFS.ZS,Trade (% of GDP),2015,77.75658157,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+JPN,Japan,NE.TRD.GNFS.ZS,Trade (% of GDP),2024,44.85293886,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+JPN,Japan,NE.TRD.GNFS.ZS,Trade (% of GDP),2023,43.59508338,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+JPN,Japan,NE.TRD.GNFS.ZS,Trade (% of GDP),2022,44.86063102,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+JPN,Japan,NE.TRD.GNFS.ZS,Trade (% of GDP),2021,35.42539273,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+JPN,Japan,NE.TRD.GNFS.ZS,Trade (% of GDP),2020,30.51922269,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+JPN,Japan,NE.TRD.GNFS.ZS,Trade (% of GDP),2019,34.35829728,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+JPN,Japan,NE.TRD.GNFS.ZS,Trade (% of GDP),2018,35.80357496,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+JPN,Japan,NE.TRD.GNFS.ZS,Trade (% of GDP),2017,33.68883368,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+JPN,Japan,NE.TRD.GNFS.ZS,Trade (% of GDP),2016,30.65627931,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+JPN,Japan,NE.TRD.GNFS.ZS,Trade (% of GDP),2015,34.72763059,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+KOR,"Korea, Rep.",NE.TRD.GNFS.ZS,Trade (% of GDP),2024,84.64249512,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+KOR,"Korea, Rep.",NE.TRD.GNFS.ZS,Trade (% of GDP),2023,82.25800907,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+KOR,"Korea, Rep.",NE.TRD.GNFS.ZS,Trade (% of GDP),2022,90.58514753,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+KOR,"Korea, Rep.",NE.TRD.GNFS.ZS,Trade (% of GDP),2021,75.30630476,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+KOR,"Korea, Rep.",NE.TRD.GNFS.ZS,Trade (% of GDP),2020,65.54495786,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+KOR,"Korea, Rep.",NE.TRD.GNFS.ZS,Trade (% of GDP),2019,71.44706324,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+KOR,"Korea, Rep.",NE.TRD.GNFS.ZS,Trade (% of GDP),2018,74.70751621,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+KOR,"Korea, Rep.",NE.TRD.GNFS.ZS,Trade (% of GDP),2017,73.19214083,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+KOR,"Korea, Rep.",NE.TRD.GNFS.ZS,Trade (% of GDP),2016,69.89972213,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+KOR,"Korea, Rep.",NE.TRD.GNFS.ZS,Trade (% of GDP),2015,75.38817746,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+USA,United States,NE.TRD.GNFS.ZS,Trade (% of GDP),2024,25.0160173,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+USA,United States,NE.TRD.GNFS.ZS,Trade (% of GDP),2023,24.92929818,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+USA,United States,NE.TRD.GNFS.ZS,Trade (% of GDP),2022,26.90789816,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+USA,United States,NE.TRD.GNFS.ZS,Trade (% of GDP),2021,25.23272602,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+USA,United States,NE.TRD.GNFS.ZS,Trade (% of GDP),2020,23.13994375,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+USA,United States,NE.TRD.GNFS.ZS,Trade (% of GDP),2019,26.25848062,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+USA,United States,NE.TRD.GNFS.ZS,Trade (% of GDP),2018,27.44535913,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+USA,United States,NE.TRD.GNFS.ZS,Trade (% of GDP),2017,27.12533822,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+USA,United States,NE.TRD.GNFS.ZS,Trade (% of GDP),2016,26.45259779,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+USA,United States,NE.TRD.GNFS.ZS,Trade (% of GDP),2015,27.68821393,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+VNM,Viet Nam,NE.TRD.GNFS.ZS,Trade (% of GDP),2024,173.8852602,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+VNM,Viet Nam,NE.TRD.GNFS.ZS,Trade (% of GDP),2023,164.9955855,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+VNM,Viet Nam,NE.TRD.GNFS.ZS,Trade (% of GDP),2022,183.1536191,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+VNM,Viet Nam,NE.TRD.GNFS.ZS,Trade (% of GDP),2021,186.6758328,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+VNM,Viet Nam,NE.TRD.GNFS.ZS,Trade (% of GDP),2020,163.2458628,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+VNM,Viet Nam,NE.TRD.GNFS.ZS,Trade (% of GDP),2019,164.704215,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+VNM,Viet Nam,NE.TRD.GNFS.ZS,Trade (% of GDP),2018,164.6639368,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+VNM,Viet Nam,NE.TRD.GNFS.ZS,Trade (% of GDP),2017,160.9800837,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+VNM,Viet Nam,NE.TRD.GNFS.ZS,Trade (% of GDP),2016,145.409508,World Bank WDI API v2,2026-09-22T08:52:24+00:00
+VNM,Viet Nam,NE.TRD.GNFS.ZS,Trade (% of GDP),2015,144.9142282,World Bank WDI API v2,2026-09-22T08:52:24+00:00
